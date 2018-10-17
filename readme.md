@@ -92,6 +92,7 @@ classdump-dyld is Copyright (c) 2013-2014 Elias Limneos, 2018 Andy Vandijck, lic
 
 Environment
 -----------
-classdump-dyld works in a command line shell on any iOS 5+ device and Mac OS X. Tested from iOS 5.x to iOS 8.x and Mac OSX 10.8+.
+classdump-dyld works in a command line shell on any iOS 5+ device and Mac OS X.
+Tested from iOS 5.x to iOS 8.x and Mac OSX 10.8+.
 classdump-dyld got updated for Mac OS X 10.13+.
 It now uses some of the crashpad libraries for _dyld_get_all_image_infos() replacement.
