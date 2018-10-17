@@ -1,0 +1,1798 @@
+for arch x86_64:
+no weak binding
+lazy binding information (from section records and indirect symbol table):
+segment section          address    index  dylib            symbol
+export information (from symbol table):
+0x7FFF5FC2CFE8 _dyldVersionNumber
+0x7FFF5FC2CFC0 _dyldVersionString
+0x7FFF5FC39288 _dyld_all_image_infos
+0x7FFF5FC01074 _dyld_fatal_error
+0x7FFF5FC386E8 _dyld_shared_cache_ranges
+0x7FFF5FC393F0 _error_string
+no compressed rebase info
+no compressed binding info
+no compressed binding info
+no compressed dyld info
+no compressed export info
+0x7FFF5FC01000   __dyld_start
+0x7FFF5FC01074   _dyld_fatal_error
+0x7FFF5FC01076   dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*)
+0x7FFF5FC012C0   coresymbolication_unload_image(CSCppDyldSharedMemoryPage*, ImageLoader const*)
+0x7FFF5FC01382   coresymbolication_load_image(CSCppDyldSharedMemoryPage*, ImageLoader const*, unsigned long long)
+0x7FFF5FC01446   dyld::addMappedRange(ImageLoader*, unsigned long, unsigned long)
+0x7FFF5FC014FB   dyld::removedMappedRanges(ImageLoader*)
+0x7FFF5FC01548   dyld::findMappedRange(unsigned long)
+0x7FFF5FC0158E   dyld::mkstringf(char const*, ...)
+0x7FFF5FC01685   dyld::throwf(char const*, ...)
+0x7FFF5FC01777   dyld::vlog(char const*, __va_list_tag*)
+0x7FFF5FC0192C   dyld::log(char const*, ...)
+0x7FFF5FC019D8   dyld::vwarn(char const*, __va_list_tag*)
+0x7FFF5FC01A0E   dyld::warn(char const*, ...)
+0x7FFF5FC01ADF   dyld::syncAllImages()
+0x7FFF5FC01B81   dyld::removeImage(ImageLoader*)
+0x7FFF5FC01E8D   dyld::notifySingle(dyld_image_states, ImageLoader const*)
+0x7FFF5FC0208A   dyld::runImageStaticTerminators(ImageLoader*)
+0x7FFF5FC0217D   dyld::getExecutablePath()
+0x7FFF5FC0218A   dyld::initializeMainExecutable()
+0x7FFF5FC0229F   dyld::runAllStaticTerminators(void*)
+0x7FFF5FC0234F   dyld::mainExecutablePrebound()
+0x7FFF5FC0236E   dyld::mainExecutable()
+0x7FFF5FC0237B   dyld::processDyldEnvironmentVariable(char const*, char const*, char const*)
+0x7FFF5FC02A87   dyld::appendParsedColonList(char const*, char const*, char const* const**)
+0x7FFF5FC02B53   dyld::parseColonList(char const*, char const*)
+0x7FFF5FC02E66   dyld::validImage(ImageLoader const*)
+0x7FFF5FC02E9C   dyld::getImageCount()
+0x7FFF5FC02EB4   dyld::getIndexedImage(unsigned int)
+0x7FFF5FC02EDC   dyld::findImageByMachHeader(mach_header const*)
+0x7FFF5FC02EE6   dyld::findImageContainingAddress(void const*)
+0x7FFF5FC02EF0   dyld::findImageContainingSymbol(void const*)
+0x7FFF5FC02F43   dyld::findLoadedImage(stat const&)
+0x7FFF5FC02FA5   dyld::isCompatibleMachO(unsigned char const*, char const*)
+0x7FFF5FC03048   dyld::inSharedCache(char const*)
+0x7FFF5FC0306E   dyld::findInSharedCacheImage(char const*, bool, stat const*, macho_header const**, char const**, long*)
+0x7FFF5FC031F9   dyld::load(char const*, dyld::LoadContext const&)
+0x7FFF5FC034F9   dyld::loadPhase0(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC035F9   dyld::openSharedCacheFile()
+0x7FFF5FC03751   dyld::cloneImage(ImageLoader*)
+0x7FFF5FC03847   dyld::loadPhase6(int, stat const&, char const*, dyld::LoadContext const&)
+0x7FFF5FC03B66   dyld::loadFromMemory(unsigned char const*, unsigned long long, char const*)
+0x7FFF5FC03C9B   dyld::fatFindBest(fat_header const*, unsigned long long*, unsigned long long*)
+0x7FFF5FC03E03   dyld::addImage(ImageLoader*)
+0x7FFF5FC03F71   dyld::registerAddCallback(void (*)(mach_header const*, long))
+0x7FFF5FC04025   dyld::registerRemoveCallback(void (*)(mach_header const*, long))
+0x7FFF5FC0407F   dyld::clearErrorMessage()
+0x7FFF5FC0408C   dyld::setErrorMessage(char const*)
+0x7FFF5FC040A8   dyld::getErrorMessage()
+0x7FFF5FC040B5   dyld::halt(char const*)
+0x7FFF5FC04102   dyld::bindLazySymbol(mach_header const*, unsigned long*)
+0x7FFF5FC0418D   dyld::fastBindLazySymbol(ImageLoader**, unsigned long)
+0x7FFF5FC04251   dyld::registerUndefinedHandler(void (*)(char const*))
+0x7FFF5FC0425E   dyld::flatFindExportedSymbol(char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x7FFF5FC04276   dyld::findExportedSymbol(char const*, bool, ImageLoader::Symbol const**, ImageLoader const**)
+0x7FFF5FC043A3   dyld::findCoalescedExportedSymbol(char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x7FFF5FC043BE   dyld::flatFindExportedSymbolWithHint(char const*, char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x7FFF5FC04469   dyld::getCoalescedImages(ImageLoader**)
+0x7FFF5FC044BC   dyld::registerImageStateSingleChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x7FFF5FC04626   dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x7FFF5FC046FA   dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x7FFF5FC04B3E   dyld::link(ImageLoader*, bool, bool, ImageLoader::RPathChain const&)
+0x7FFF5FC04C1E   dyld::garbageCollectImages()
+0x7FFF5FC0500A   dyld::runInitializers(ImageLoader*)
+0x7FFF5FC05078   dyld::preflight(ImageLoader*, ImageLoader::RPathChain const&)
+0x7FFF5FC050F4   dyld::preflight_finally(ImageLoader*)
+0x7FFF5FC05139   dyld::processIsRestricted()
+0x7FFF5FC05145   dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*)
+0x7FFF5FC05DA6   dyld::useSimulatorDyld(int, macho_header const*, char const*, int, char const**, char const**, char const**, unsigned long*)
+0x7FFF5FC0618A   dyld::setContext(macho_header const*, int, char const**, char const**, char const**)
+0x7FFF5FC06375   dyld::checkLoadCommandEnvironmentVariables()
+0x7FFF5FC064CA   dyld::checkVersionedPaths()
+0x7FFF5FC06804   dyld::checkEnvironmentVariables(char const**, bool)
+0x7FFF5FC06A29   dyld::updateAllImages(dyld_image_states, unsigned int, dyld_image_info const*)
+0x7FFF5FC06A42   dyld::mapSharedCache()
+0x7FFF5FC0748B   dyld::_shared_region_check_np(unsigned long long*)
+0x7FFF5FC074B2   dyld::_shared_region_map_and_slide_np(int, unsigned int, shared_file_mapping_np const*, int, long, void*, unsigned long)
+0x7FFF5FC076D8   dyld::removePathWithPrefix(char const**, char const*)
+0x7FFF5FC07753   dyld::paths_expand_roots(char const**, char const*, char const*)
+0x7FFF5FC077E8   dyld::checkDylibOverride(char const*)
+0x7FFF5FC079B3   dyld::getDylibVersionAndInstallname(char const*, unsigned int*, char*)
+0x7FFF5FC07B21   dyld::libraryLocator(char const*, bool, char const*, ImageLoader::RPathChain const*)
+0x7FFF5FC07B5B   dyld::terminationRecorder(ImageLoader*)
+0x7FFF5FC07BAB   dyld::undefinedHandler(char const*)
+0x7FFF5FC07BC0   dyld::getMappedRegions(ImageLoader::MappedRegion*)
+0x7FFF5FC07C0B   dyld::notifyBatch(dyld_image_states)
+0x7FFF5FC07C19   dyld::registerDOFs(std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> > const&)
+0x7FFF5FC07E1D   dyld::clearAllDepths()
+0x7FFF5FC07E48   dyld::printAllDepths()
+0x7FFF5FC07EA1   dyld::imageCount()
+0x7FFF5FC07EB9   dyld::setNewProgramVars(ProgramVars const&)
+0x7FFF5FC07F37   dyld::setErrorStrings(unsigned int, char const*, char const*, char const*)
+0x7FFF5FC07F68   dyld::addDynamicReference(ImageLoader*, ImageLoader*)
+0x7FFF5FC08025   dyld::getProcessInfo()
+0x7FFF5FC08035   dyld::imageSorter(void const*, void const*)
+0x7FFF5FC08045   dyld::checkandAddImage(ImageLoader*, dyld::LoadContext const&)
+0x7FFF5FC081A0   dyld::loadPhase1(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC08283   dyld::loadPhase2(char const*, char const*, dyld::LoadContext const&, char const* const*, char const* const*, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC08485   dyld::loadPhase3(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC08B15   dyld::loadPhase4(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC08BE6   dyld::loadPhase5(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x7FFF5FC08FEF   dyld::getFrameworkPartialPath(char const*)
+0x7FFF5FC09190   ___clang_call_terminate
+0x7FFF5FC0919E   std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> >::erase(std::__1::__wrap_iter<ImageLoader::DynamicReference const*>, std::__1::__wrap_iter<ImageLoader::DynamicReference const*>)
+0x7FFF5FC09232   std::__1::__wrap_iter<ImageLoader::DynamicReference*> std::__1::remove_if<std::__1::__wrap_iter<ImageLoader::DynamicReference*>, dyld::RefUsesImage>(std::__1::__wrap_iter<ImageLoader::DynamicReference*>, std::__1::__wrap_iter<ImageLoader::DynamicReference*>, dyld::RefUsesImage)
+0x7FFF5FC092B6   std::__1::vector<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)> >::insert(std::__1::__wrap_iter<char const* (* const*)(dyld_image_states, unsigned int, dyld_image_info const*)>, char const* (* const&)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x7FFF5FC095DC   std::__1::vector<ImageLoader*, std::__1::allocator<ImageLoader*> >::reserve(unsigned long)
+0x7FFF5FC096BC   std::__1::vector<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)> >::reserve(unsigned long)
+0x7FFF5FC0979C   std::__1::vector<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF> >::reserve(unsigned long)
+0x7FFF5FC0988A   std::__1::__split_buffer<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF>&>::~__split_buffer()
+0x7FFF5FC098C0   std::__1::__split_buffer<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)>&>::~__split_buffer()
+0x7FFF5FC098F6   std::__1::__split_buffer<ImageLoader*, std::__1::allocator<ImageLoader*>&>::~__split_buffer()
+0x7FFF5FC0992C   void std::__1::vector<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)> >::__push_back_slow_path<char const* (* const)(dyld_image_states, unsigned int, dyld_image_info const*)>(char const* (* const&)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x7FFF5FC09A64   std::__1::__split_buffer<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)>&>::~__split_buffer()
+0x7FFF5FC09A9A   void std::__1::vector<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)> >::__push_back_slow_path<void (* const)(mach_header const*, long)>(void (* const&)(mach_header const*, long))
+0x7FFF5FC09BD2   void std::__1::vector<dyld::DylibOverride, std::__1::allocator<dyld::DylibOverride> >::__push_back_slow_path<dyld::DylibOverride const>(dyld::DylibOverride const&)
+0x7FFF5FC09D12   std::__1::__split_buffer<dyld::DylibOverride, std::__1::allocator<dyld::DylibOverride>&>::~__split_buffer()
+0x7FFF5FC09D48   void std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> >::__push_back_slow_path<ImageLoader::DynamicReference const>(ImageLoader::DynamicReference const&)
+0x7FFF5FC09E88   std::__1::__split_buffer<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference>&>::~__split_buffer()
+0x7FFF5FC09EBE   void std::__1::vector<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF> >::__push_back_slow_path<dyld::RegisteredDOF const>(dyld::RegisteredDOF const&)
+0x7FFF5FC09FFE   void std::__1::vector<ImageLoader*, std::__1::allocator<ImageLoader*> >::__push_back_slow_path<ImageLoader* const>(ImageLoader* const&)
+0x7FFF5FC0A136   std::__1::__vector_base<char const*, std::__1::allocator<char const*> >::~__vector_base()
+0x7FFF5FC0A16C   void std::__1::vector<char const*, std::__1::allocator<char const*> >::__push_back_slow_path<char const* const>(char const* const&)
+0x7FFF5FC0A2A4   std::__1::__split_buffer<char const*, std::__1::allocator<char const*>&>::~__split_buffer()
+0x7FFF5FC0A2DC   __NSGetExecutablePath
+0x7FFF5FC0A349   __dyld_image_count
+0x7FFF5FC0A374   __dyld_get_image_header
+0x7FFF5FC0A3C3   __dyld_get_image_vmaddr_slide
+0x7FFF5FC0A412   __dyld_get_image_slide
+0x7FFF5FC0A464   __dyld_get_image_name
+0x7FFF5FC0A4B2   __dyld_get_image_header_containing_address
+0x7FFF5FC0A504   __dyld_register_func_for_add_image
+0x7FFF5FC0A53F   __dyld_register_func_for_remove_image
+0x7FFF5FC0A57A   __dyld_lookup_and_bind_fully
+0x7FFF5FC0A68C   __dyld_lookup_and_bind_with_hint
+0x7FFF5FC0A757   _NSLookupAndBindSymbol
+0x7FFF5FC0A7AA   _NSLookupAndBindSymbolWithHint
+0x7FFF5FC0A84F   _NSAddImage
+0x7FFF5FC0A8B9   addImage(void*, char const*, bool, bool, bool, bool)
+0x7FFF5FC0AB5E   _NSAddLibrary
+0x7FFF5FC0ABB2   _NSAddLibraryWithSearching
+0x7FFF5FC0AC09   _NSIsSymbolNameDefinedInImage
+0x7FFF5FC0AC71   _NSLookupSymbolInImage
+0x7FFF5FC0AE5D   _NSIsSymbolNameDefinedWithHint
+0x7FFF5FC0AEFC   _NSNameOfSymbol
+0x7FFF5FC0AF57   _NSAddressOfSymbol
+0x7FFF5FC0AFC3   _NSModuleForSymbol
+0x7FFF5FC0B00C   __dyld_all_twolevel_modules_prebound
+0x7FFF5FC0B035   __dyld_bind_objc_module
+0x7FFF5FC0B063   __dyld_bind_fully_image_containing_address
+0x7FFF5FC0B10E   __dyld_image_containing_address
+0x7FFF5FC0B150   _NSCreateObjectFileImageFromFile
+0x7FFF5FC0B24E   createObjectImageFile(ImageLoader*, void const*, unsigned long)
+0x7FFF5FC0B2DF   _NSCreateObjectFileImageFromMemory
+0x7FFF5FC0B3BB   _NSDestroyObjectFileImage
+0x7FFF5FC0B51C   _NSHasModInitObjectFileImage
+0x7FFF5FC0B55B   _NSSymbolDefinitionCountInObjectFileImage
+0x7FFF5FC0B59A   _NSSymbolDefinitionNameInObjectFileImage
+0x7FFF5FC0B5F3   _NSSymbolReferenceCountInObjectFileImage
+0x7FFF5FC0B632   _NSSymbolReferenceNameInObjectFileImage
+0x7FFF5FC0B6BC   _NSGetSectionDataInObjectFileImage
+0x7FFF5FC0B740   _NSIsSymbolDefinedInObjectFileImage
+0x7FFF5FC0B795   _NSLinkModule
+0x7FFF5FC0B93B   _NSLookupSymbolInModule
+0x7FFF5FC0B99E   _NSNameOfModule
+0x7FFF5FC0B9ED   _NSLibraryNameForModule
+0x7FFF5FC0BA3C   _NSUnLinkModule
+0x7FFF5FC0BBDC   _NSLinkEditError
+0x7FFF5FC0BC0C   __dyld_fork_child
+0x7FFF5FC0BC5E   __dyld_launched_prebound
+0x7FFF5FC0BC89   __dyld_func_lookup
+0x7FFF5FC0BD10   unimplemented()
+0x7FFF5FC0BD20   _dlopen_preflight
+0x7FFF5FC0BF0F   dlerrorClear()
+0x7FFF5FC0BF4B   dlerrorSet(char const*)
+0x7FFF5FC0BF8F   _dlopen
+0x7FFF5FC0C342   _dlclose
+0x7FFF5FC0C3D0   _dladdr
+0x7FFF5FC0C4C6   _dlerror
+0x7FFF5FC0C537   _dlsym
+0x7FFF5FC0C84C   __dyld_get_all_image_infos
+0x7FFF5FC0C85C   _dyld_register_image_state_change_handler
+0x7FFF5FC0C8BC   _dyld_image_path_containing_address
+0x7FFF5FC0C90D   _dyld_shared_cache_some_image_overridden
+0x7FFF5FC0C91C   _dyld_dynamic_interpose
+0x7FFF5FC0C9A5   registerThreadHelpers(dyld::LibSystemHelpers const*)
+0x7FFF5FC0C9C3   _dyld_make_delayed_module_initializer_calls()
+0x7FFF5FC0C9EB   _dyld_set_variable(char const*, char const*)
+0x7FFF5FC0CA23   _dyld_add_image_reexport(mach_header const*, mach_header const*)
+0x7FFF5FC0CA59   client_dyld_find_unwind_sections(void*, dyld_unwind_sections*)
+0x7FFF5FC0CA88   client_dyld_lookup_and_bind(char const*, void**, __NSModule**)
+0x7FFF5FC0CB2B   _dyld_install_handlers(void*, void*, void*)
+0x7FFF5FC0CB5C   _dyld_register_binding_handler(void* (*)(char const*, char const*, void*), ImageLoader::BindingOptions)
+0x7FFF5FC0CBA1   NSMakePrivateModulePublic(__NSModule*)
+0x7FFF5FC0CBE1   client_NSIsSymbolNameDefined(char const*)
+0x7FFF5FC0CC21   _dyld_call_module_initializers_for_dylib(mach_header const*)
+0x7FFF5FC0CC42   void std::__1::vector<__NSObjectFileImage*, std::__1::allocator<__NSObjectFileImage*> >::__push_back_slow_path<__NSObjectFileImage* const>(__NSObjectFileImage* const&)
+0x7FFF5FC0CD7A   std::__1::__split_buffer<__NSObjectFileImage*, std::__1::allocator<__NSObjectFileImage*>&>::~__split_buffer()
+0x7FFF5FC0CDB0   ___cxa_get_globals
+0x7FFF5FC0CE2F   ___cxa_get_globals_fast
+0x7FFF5FC0CE5C   __dyld_find_unwind_sections
+0x7FFF5FC0CEB4   addImagesToAllImages(unsigned int, dyld_image_info const*)
+0x7FFF5FC0CFAD   notifyGDB(dyld_image_states, unsigned int, dyld_image_info const*)
+0x7FFF5FC0CFDE   addNonSharedCacheImageUUID(dyld_uuid_info const&)
+0x7FFF5FC0D078   removeImageFromAllImages(mach_header const*)
+0x7FFF5FC0D272   setAlImageInfosHalt(char const*, unsigned long)
+0x7FFF5FC0D28E   gdb_image_notifier(dyld_image_mode, unsigned int, dyld_image_info const*)
+0x7FFF5FC0D294   std::__1::vector<dyld_image_info, std::__1::allocator<dyld_image_info> >::reserve(unsigned long)
+0x7FFF5FC0D3B4   std::__1::vector<dyld_uuid_info, std::__1::allocator<dyld_uuid_info> >::reserve(unsigned long)
+0x7FFF5FC0D4D4   void std::__1::vector<dyld_uuid_info, std::__1::allocator<dyld_uuid_info> >::__push_back_slow_path<dyld_uuid_info const>(dyld_uuid_info const&)
+0x7FFF5FC0D658   std::__1::__split_buffer<dyld_uuid_info, std::__1::allocator<dyld_uuid_info>&>::~__split_buffer()
+0x7FFF5FC0D6A0   void std::__1::vector<dyld_image_info, std::__1::allocator<dyld_image_info> >::__push_back_slow_path<dyld_image_info const>(dyld_image_info const&)
+0x7FFF5FC0D824   std::__1::__split_buffer<dyld_image_info, std::__1::allocator<dyld_image_info>&>::~__split_buffer()
+0x7FFF5FC0D86C   _abort
+0x7FFF5FC0D87C   ___assert_rtn
+0x7FFF5FC0D8C3   _fprintf
+0x7FFF5FC0D96B   _localtime
+0x7FFF5FC0D973   _exit
+0x7FFF5FC0D983   ___guard_setup
+0x7FFF5FC0DA62   ___stack_chk_fail
+0x7FFF5FC0DA72   __init_cpu_capabilities
+0x7FFF5FC0DA78   _mach_error_string
+0x7FFF5FC0DA85   _abort_message
+0x7FFF5FC0DB38   std::__1::__vector_base_common<true>::__throw_length_error() const
+0x7FFF5FC0DB48   dyld::my_stat(char const*, stat*)
+0x7FFF5FC0DB7C   dyld::my_open(char const*, int, int)
+0x7FFF5FC0DBC2   ImageLoader::ImageLoader(char const*, unsigned int)
+0x7FFF5FC0DC7E   ImageLoader::hash(char const*)
+0x7FFF5FC0DCA2   ImageLoader::deleteImage(ImageLoader*)
+0x7FFF5FC0DCB4   ImageLoader::~ImageLoader()
+0x7FFF5FC0DCF6   ImageLoader::~ImageLoader()
+0x7FFF5FC0DD00   ImageLoader::~ImageLoader()
+0x7FFF5FC0DD1C   ImageLoader::setFileInfo(int, unsigned long long, long)
+0x7FFF5FC0DD2E   ImageLoader::setMapped(ImageLoader::LinkContext const&)
+0x7FFF5FC0DD48   ImageLoader::compare(ImageLoader const*) const
+0x7FFF5FC0DD88   ImageLoader::setPath(char const*)
+0x7FFF5FC0DE00   ImageLoader::setPathUnowned(char const*)
+0x7FFF5FC0DE5E   ImageLoader::setPaths(char const*, char const*)
+0x7FFF5FC0DE94   ImageLoader::getRealPath() const
+0x7FFF5FC0DEA8   ImageLoader::matchInstallPath() const
+0x7FFF5FC0DEB6   ImageLoader::setMatchInstallPath(bool)
+0x7FFF5FC0DED0   ImageLoader::statMatch(stat const&) const
+0x7FFF5FC0DEEC   ImageLoader::getShortName() const
+0x7FFF5FC0DF1E   ImageLoader::setLeaveMapped()
+0x7FFF5FC0DF28   ImageLoader::setHideExports(bool)
+0x7FFF5FC0DF42   ImageLoader::hasHiddenExports() const
+0x7FFF5FC0DF50   ImageLoader::isLinked() const
+0x7FFF5FC0DF64   ImageLoader::lastModified() const
+0x7FFF5FC0DF6E   ImageLoader::containsAddress(void const*) const
+0x7FFF5FC0DFF6   ImageLoader::overlapsWithAddressRange(void const*, void const*) const
+0x7FFF5FC0E0CC   ImageLoader::getMappedRegions(ImageLoader::MappedRegion*&) const
+0x7FFF5FC0E13C   ImageLoader::reExport(ImageLoader*)
+0x7FFF5FC0E19C   ImageLoader::dependsOn(ImageLoader*)
+0x7FFF5FC0E1F4   ImageLoader::findExportedSymbolInDependentImagesExcept(char const*, ImageLoader const**, ImageLoader const**&, ImageLoader const**, ImageLoader const**) const
+0x7FFF5FC0E360   ImageLoader::findExportedSymbolInDependentImages(char const*, ImageLoader::LinkContext const&, ImageLoader const**) const
+0x7FFF5FC0E3E6   ImageLoader::findExportedSymbolInImageOrDependentImages(char const*, ImageLoader::LinkContext const&, ImageLoader const**) const
+0x7FFF5FC0E45E   ImageLoader::applyInterposing(ImageLoader::LinkContext const&)
+0x7FFF5FC0E47A   ImageLoader::recursiveApplyInterposing(ImageLoader::LinkContext const&)
+0x7FFF5FC0E52A   ImageLoader::interposedAddress(ImageLoader::LinkContext const&, unsigned long, ImageLoader const*, ImageLoader const*)
+0x7FFF5FC0E590   ImageLoader::addDynamicInterposingTuples(dyld_interpose_tuple const*, unsigned long)
+0x7FFF5FC0E67C   ImageLoader::link(ImageLoader::LinkContext const&, bool, bool, bool, ImageLoader::RPathChain const&)
+0x7FFF5FC0E84A   ImageLoader::recursiveLoadLibraries(ImageLoader::LinkContext const&, bool, ImageLoader::RPathChain const&)
+0x7FFF5FC0EE72   ImageLoader::recursiveUpdateDepth(unsigned int)
+0x7FFF5FC0EF16   ImageLoader::recursiveRebase(ImageLoader::LinkContext const&)
+0x7FFF5FC0EFE8   ImageLoader::recursiveBind(ImageLoader::LinkContext const&, bool, bool)
+0x7FFF5FC0F116   ImageLoader::weakBind(ImageLoader::LinkContext const&)
+0x7FFF5FC0F5C6   ImageLoader::recursiveGetDOFSections(ImageLoader::LinkContext const&, std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >&)
+0x7FFF5FC0F658   ImageLoader::decrementDlopenReferenceCount()
+0x7FFF5FC0F66E   ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&)
+0x7FFF5FC0F740   ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&)
+0x7FFF5FC0F91E   ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&)
+0x7FFF5FC0F9A2   ImageLoader::bindAllLazyPointers(ImageLoader::LinkContext const&, bool)
+0x7FFF5FC0FA34   ImageLoader::allDependentLibrariesAsWhenPreBound() const
+0x7FFF5FC0FA42   ImageLoader::markedUsedRecursive(std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> > const&)
+0x7FFF5FC0FAD6   ImageLoader::setNeverUnloadRecursive()
+0x7FFF5FC0FB32   ImageLoader::recursiveSpinLock(ImageLoader::recursive_lock&)
+0x7FFF5FC0FB6E   ImageLoader::printStatistics(unsigned int, ImageLoader::InitializerTimingList const&)
+0x7FFF5FC0FE03   printTime(char const*, unsigned long long, unsigned long long)
+0x7FFF5FC0FF06   commatize(unsigned long long, char*)
+0x7FFF5FC0FF92   ImageLoader::addSuffix(char const*, char const*, char*)
+0x7FFF5FC10012   void std::__1::vector<ImageLoader::InterposeTuple, std::__1::allocator<ImageLoader::InterposeTuple> >::__push_back_slow_path<ImageLoader::InterposeTuple const>(ImageLoader::InterposeTuple const&)
+0x7FFF5FC10162   std::__1::__split_buffer<ImageLoader::InterposeTuple, std::__1::allocator<ImageLoader::InterposeTuple>&>::~__split_buffer()
+0x7FFF5FC10198   void std::__1::vector<std::__1::pair<ImageLoader*, ImageLoader*>, std::__1::allocator<std::__1::pair<ImageLoader*, ImageLoader*> > >::__push_back_slow_path<std::__1::pair<ImageLoader*, ImageLoader*> const>(std::__1::pair<ImageLoader*, ImageLoader*> const&)
+0x7FFF5FC102D8   std::__1::__split_buffer<std::__1::pair<ImageLoader*, ImageLoader*>, std::__1::allocator<std::__1::pair<ImageLoader*, ImageLoader*> >&>::~__split_buffer()
+0x7FFF5FC1030E   std::__1::__vector_base<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >::~__vector_base()
+0x7FFF5FC10358   ImageLoaderMachO::ImageLoaderMachO(macho_header const*, char const*, unsigned int, unsigned int*, unsigned int)
+0x7FFF5FC10410   ImageLoaderMachO::sniffLoadCommands(macho_header const*, char const*, bool*, unsigned int*, unsigned int*, ImageLoader::LinkContext const&, linkedit_data_command const**)
+0x7FFF5FC10796   ImageLoaderMachO::needsAddedLibSystemDepency(unsigned int, macho_header const*)
+0x7FFF5FC10864   ImageLoaderMachO::instantiateMainExecutable(macho_header const*, unsigned long, char const*, ImageLoader::LinkContext const&)
+0x7FFF5FC108D0   ImageLoaderMachO::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, ImageLoader::LinkContext const&)
+0x7FFF5FC10A28   ImageLoaderMachO::instantiateFromCache(macho_header const*, char const*, long, stat const&, ImageLoader::LinkContext const&)
+0x7FFF5FC10AAE   ImageLoaderMachO::instantiateFromMemory(char const*, macho_header const*, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC10B1E   ImageLoaderMachO::crashIfInvalidCodeSignature()
+0x7FFF5FC10B7E   ImageLoaderMachO::parseLoadCmds()
+0x7FFF5FC1100C   ImageLoaderMachO::destroy()
+0x7FFF5FC11066   ImageLoaderMachO::UnmapSegments()
+0x7FFF5FC11198   ImageLoaderMachO::segmentCount() const
+0x7FFF5FC111A4   ImageLoaderMachO::segName(unsigned int) const
+0x7FFF5FC111CE   ImageLoaderMachO::segSize(unsigned int) const
+0x7FFF5FC111F8   ImageLoaderMachO::segFileSize(unsigned int) const
+0x7FFF5FC11222   ImageLoaderMachO::segHasTrailingZeroFill(unsigned int)
+0x7FFF5FC11276   ImageLoaderMachO::segFileOffset(unsigned int) const
+0x7FFF5FC112A0   ImageLoaderMachO::segReadable(unsigned int) const
+0x7FFF5FC112CC   ImageLoaderMachO::segWriteable(unsigned int) const
+0x7FFF5FC112FA   ImageLoaderMachO::segExecutable(unsigned int) const
+0x7FFF5FC11328   ImageLoaderMachO::segUnaccessible(unsigned int) const
+0x7FFF5FC11356   ImageLoaderMachO::segHasPreferredLoadAddress(unsigned int) const
+0x7FFF5FC11384   ImageLoaderMachO::segPreferredLoadAddress(unsigned int) const
+0x7FFF5FC113AE   ImageLoaderMachO::segActualLoadAddress(unsigned int) const
+0x7FFF5FC113DC   ImageLoaderMachO::segActualEndAddress(unsigned int) const
+0x7FFF5FC11416   ImageLoaderMachO::preFetchDATA(int, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC1156E   ImageLoaderMachO::segmentsMustSlideTogether() const
+0x7FFF5FC11576   ImageLoaderMachO::segmentsCanSlide() const
+0x7FFF5FC115B8   ImageLoaderMachO::isBundle() const
+0x7FFF5FC115CA   ImageLoaderMachO::isDylib() const
+0x7FFF5FC115DC   ImageLoaderMachO::isExecutable() const
+0x7FFF5FC115EE   ImageLoaderMachO::isPositionIndependentExecutable() const
+0x7FFF5FC1160A   ImageLoaderMachO::forceFlat() const
+0x7FFF5FC1161A   ImageLoaderMachO::usesTwoLevelNameSpace() const
+0x7FFF5FC1162A   ImageLoaderMachO::isPrebindable() const
+0x7FFF5FC1163C   ImageLoaderMachO::hasCoalescedExports() const
+0x7FFF5FC1164C   ImageLoaderMachO::participatesInCoalescing() const
+0x7FFF5FC11674   ImageLoaderMachO::setSlide(long)
+0x7FFF5FC1167E   ImageLoaderMachO::loadCodeSignature(linkedit_data_command const*, int, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC117EA   ImageLoaderMachO::getInstallPath() const
+0x7FFF5FC11808   ImageLoaderMachO::registerInterposing()
+0x7FFF5FC119CA   ImageLoaderMachO::sdkVersion() const
+0x7FFF5FC11A00   ImageLoaderMachO::minOSVersion(mach_header const*)
+0x7FFF5FC11A32   ImageLoaderMachO::minOSVersion() const
+0x7FFF5FC11A6C   ImageLoaderMachO::getThreadPC() const
+0x7FFF5FC11AE6   ImageLoaderMachO::getMain() const
+0x7FFF5FC11B76   ImageLoaderMachO::doGetDependentLibraries(ImageLoader::DependentLibraryInfo*)
+0x7FFF5FC11C5C   ImageLoaderMachO::doGetLibraryInfo()
+0x7FFF5FC11C88   ImageLoaderMachO::getRPaths(ImageLoader::LinkContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >&) const
+0x7FFF5FC12032   ImageLoaderMachO::getUUID(unsigned char*) const
+0x7FFF5FC1207E   ImageLoaderMachO::doRebase(ImageLoader::LinkContext const&)
+0x7FFF5FC12144   ImageLoaderMachO::findExportedSymbol(char const*, bool, ImageLoader const**) const
+0x7FFF5FC12242   ImageLoaderMachO::getExportedSymbolAddress(ImageLoader::Symbol const*, ImageLoader::LinkContext const&, ImageLoader const*, bool) const
+0x7FFF5FC1227A   ImageLoaderMachO::getSymbolAddress(ImageLoader::Symbol const*, ImageLoader const*, ImageLoader::LinkContext const&, bool) const
+0x7FFF5FC122B6   ImageLoaderMachO::getExportedSymbolInfo(ImageLoader::Symbol const*) const
+0x7FFF5FC122C8   ImageLoaderMachO::getExportedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC122DA   ImageLoaderMachO::getExportedSymbolCount() const
+0x7FFF5FC122E8   ImageLoaderMachO::getIndexedExportedSymbol(unsigned int) const
+0x7FFF5FC122FA   ImageLoaderMachO::getImportedSymbolCount() const
+0x7FFF5FC12308   ImageLoaderMachO::getIndexedImportedSymbol(unsigned int) const
+0x7FFF5FC1231A   ImageLoaderMachO::getImportedSymbolInfo(ImageLoader::Symbol const*) const
+0x7FFF5FC12322   ImageLoaderMachO::getImportedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC12334   ImageLoaderMachO::getSectionContent(char const*, char const*, void**, unsigned long*)
+0x7FFF5FC12406   ImageLoaderMachO::getUnwindInfo(dyld_unwind_sections*)
+0x7FFF5FC12488   ImageLoaderMachO::findSection(void const*, char const**, char const**, unsigned long*)
+0x7FFF5FC12552   ImageLoaderMachO::throwSymbolNotFound(ImageLoader::LinkContext const&, char const*, char const*, char const*, char const*)
+0x7FFF5FC1259A   ImageLoaderMachO::machHeader() const
+0x7FFF5FC125A4   ImageLoaderMachO::getSlide() const
+0x7FFF5FC125AE   ImageLoaderMachO::getEnd() const
+0x7FFF5FC1262C   ImageLoaderMachO::bindLocation(ImageLoader::LinkContext const&, unsigned long, unsigned long, ImageLoader const*, unsigned char, char const*, long, char const*)
+0x7FFF5FC12740   ImageLoaderMachO::setupLazyPointerHandler(ImageLoader::LinkContext const&)
+0x7FFF5FC12908   ImageLoaderMachO::lookupProgramVars(ImageLoader::LinkContext const&) const
+0x7FFF5FC12A4A   ImageLoaderMachO::usablePrebinding(ImageLoader::LinkContext const&) const
+0x7FFF5FC12AF4   ImageLoaderMachO::doImageInit(ImageLoader::LinkContext const&)
+0x7FFF5FC12BE2   ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&)
+0x7FFF5FC12D44   ImageLoaderMachO::doGetDOFSections(ImageLoader::LinkContext const&, std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >&)
+0x7FFF5FC12E50   ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&)
+0x7FFF5FC12EA8   ImageLoaderMachO::needsInitialization()
+0x7FFF5FC12ECE   ImageLoaderMachO::needsTermination()
+0x7FFF5FC12EDC   ImageLoaderMachO::doTermination(ImageLoader::LinkContext const&)
+0x7FFF5FC12FFC   ImageLoaderMachO::printStatistics(unsigned int, ImageLoader::InitializerTimingList const&)
+0x7FFF5FC1305C   ImageLoaderMachO::assignSegmentAddresses(ImageLoader::LinkContext const&)
+0x7FFF5FC132DC   ImageLoaderMachO::reserveAnAddressRange(unsigned long, ImageLoader::LinkContext const&)
+0x7FFF5FC13392   ImageLoaderMachO::mapSegments(int, unsigned long long, unsigned long long, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC13626   ImageLoaderMachO::mapSegments(void const*, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC1379E   ImageLoaderMachO::segProtect(unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC1390E   ImageLoaderMachO::~ImageLoaderMachO()
+0x7FFF5FC13918   ImageLoaderMachO::~ImageLoaderMachO()
+0x7FFF5FC13946   void std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >::__push_back_slow_path<ImageLoader::DOFInfo const>(ImageLoader::DOFInfo const&)
+0x7FFF5FC13ACA   std::__1::__split_buffer<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo>&>::~__split_buffer()
+0x7FFF5FC13B14   _stub_binding_helper
+0x7FFF5FC13BFA   _malloc
+0x7FFF5FC13CF2   _free
+0x7FFF5FC13D40   _calloc
+0x7FFF5FC13D85   _realloc
+0x7FFF5FC13DBC   _vm_alloc
+0x7FFF5FC13E10   _xmmap
+0x7FFF5FC13E3A   ImageLoaderMachOClassic::instantiateMainExecutable(macho_header const*, unsigned long, char const*, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC13FAC   ImageLoaderMachOClassic::instantiateStart(macho_header const*, char const*, unsigned int, unsigned int)
+0x7FFF5FC1407A   ImageLoaderMachOClassic::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, unsigned int, unsigned int, linkedit_data_command const*, ImageLoader::LinkContext const&)
+0x7FFF5FC14266   ImageLoaderMachOClassic::mapSegmentsClassic(int, unsigned long long, unsigned long long, unsigned long long, ImageLoader::LinkContext const&)
+0x7FFF5FC142A2   ImageLoaderMachOClassic::instantiateFromCache(macho_header const*, char const*, long, stat const&, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC143D6   ImageLoaderMachOClassic::instantiateFromMemory(char const*, macho_header const*, unsigned long long, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC144B4   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x7FFF5FC144F4   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x7FFF5FC144FE   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x7FFF5FC1452C   ImageLoaderMachOClassic::segmentCommandOffsets() const
+0x7FFF5FC1453A   ImageLoaderMachOClassic::libImage(unsigned int) const
+0x7FFF5FC14556   ImageLoaderMachOClassic::libReExported(unsigned int) const
+0x7FFF5FC14570   ImageLoaderMachOClassic::libIsUpward(unsigned int) const
+0x7FFF5FC1458C   ImageLoaderMachOClassic::setLibImage(unsigned int, ImageLoader*, bool, bool)
+0x7FFF5FC145B8   ImageLoaderMachOClassic::setSymbolTableInfo(macho_nlist const*, char const*, dysymtab_command const*)
+0x7FFF5FC145CE   ImageLoaderMachOClassic::prefetchLINKEDIT(ImageLoader::LinkContext const&)
+0x7FFF5FC146CC   ImageLoaderMachOClassic::isSubframeworkOf(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x7FFF5FC14820   ImageLoaderMachOClassic::hasSubLibrary(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x7FFF5FC14AEE   ImageLoaderMachOClassic::getFirstWritableSegmentAddress()
+0x7FFF5FC14B5C   ImageLoaderMachOClassic::rebase(ImageLoader::LinkContext const&)
+0x7FFF5FC14DF0   ImageLoaderMachOClassic::binarySearchWithToc(char const*, char const*, macho_nlist const*, dylib_table_of_contents const*, unsigned int, unsigned int) const
+0x7FFF5FC14EAA   ImageLoaderMachOClassic::binarySearch(char const*, char const*, macho_nlist const*, unsigned int) const
+0x7FFF5FC14F2E   ImageLoaderMachOClassic::findExportedSymbol(char const*, ImageLoader const**) const
+0x7FFF5FC14F9E   ImageLoaderMachOClassic::containsSymbol(void const*) const
+0x7FFF5FC14FB6   ImageLoaderMachOClassic::exportedSymbolAddress(ImageLoader::LinkContext const&, ImageLoader::Symbol const*, ImageLoader const*, bool) const
+0x7FFF5FC14FC4   ImageLoaderMachOClassic::exportedSymbolIsWeakDefintion(ImageLoader::Symbol const*) const
+0x7FFF5FC14FD0   ImageLoaderMachOClassic::exportedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC14FDC   ImageLoaderMachOClassic::exportedSymbolCount() const
+0x7FFF5FC14FEC   ImageLoaderMachOClassic::exportedSymbolIndexed(unsigned int) const
+0x7FFF5FC1500E   ImageLoaderMachOClassic::importedSymbolCount() const
+0x7FFF5FC1501E   ImageLoaderMachOClassic::importedSymbolIndexed(unsigned int) const
+0x7FFF5FC15040   ImageLoaderMachOClassic::importedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC1504C   ImageLoaderMachOClassic::resolveUndefined(ImageLoader::LinkContext const&, macho_nlist const*, bool, bool, ImageLoader const**)
+0x7FFF5FC153F0   ImageLoaderMachOClassic::isAddrInSection(unsigned long, unsigned char)
+0x7FFF5FC15460   ImageLoaderMachOClassic::doBindExternalRelocations(ImageLoader::LinkContext const&)
+0x7FFF5FC15718   ImageLoaderMachOClassic::bindIndirectSymbol(unsigned long*, macho_section const*, char const*, unsigned long, ImageLoader const*, ImageLoader::LinkContext const&)
+0x7FFF5FC15800   ImageLoaderMachOClassic::doBindFastLazySymbol(unsigned int, ImageLoader::LinkContext const&, void (*)(), void (*)())
+0x7FFF5FC1582A   ImageLoaderMachOClassic::doBindLazySymbol(unsigned long*, ImageLoader::LinkContext const&)
+0x7FFF5FC15976   ImageLoaderMachOClassic::initializeCoalIterator(ImageLoader::CoalIterator&, unsigned int)
+0x7FFF5FC159C2   ImageLoaderMachOClassic::incrementCoalIterator(ImageLoader::CoalIterator&)
+0x7FFF5FC15A48   ImageLoaderMachOClassic::getAddressCoalIterator(ImageLoader::CoalIterator&, ImageLoader::LinkContext const&)
+0x7FFF5FC15A88   ImageLoaderMachOClassic::updateUsesCoalIterator(ImageLoader::CoalIterator&, unsigned long, ImageLoader*, ImageLoader::LinkContext const&)
+0x7FFF5FC15DBE   ImageLoaderMachOClassic::bindIndirectSymbolPointers(ImageLoader::LinkContext const&, bool, bool)
+0x7FFF5FC16046   ImageLoaderMachOClassic::doBind(ImageLoader::LinkContext const&, bool)
+0x7FFF5FC160C4   ImageLoaderMachOClassic::doBindJustLazies(ImageLoader::LinkContext const&)
+0x7FFF5FC160D6   ImageLoaderMachOClassic::doInterpose(ImageLoader::LinkContext const&)
+0x7FFF5FC16258   ImageLoaderMachOClassic::dynamicInterpose(ImageLoader::LinkContext const&)
+0x7FFF5FC164BC   ImageLoaderMachOClassic::findClosestSymbol(void const*, void const**) const
+0x7FFF5FC165A0   ImageLoaderMachOClassic::setDyldInfo(dyld_info_command const*)
+0x7FFF5FC165B0   ImageLoaderMachOCompressed::instantiateMainExecutable(macho_header const*, unsigned long, char const*, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC167D0   ImageLoaderMachOCompressed::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, unsigned int, unsigned int, linkedit_data_command const*, ImageLoader::LinkContext const&)
+0x7FFF5FC16AB0   ImageLoaderMachOCompressed::instantiateFromCache(macho_header const*, char const*, long, stat const&, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC16C90   ImageLoaderMachOCompressed::instantiateFromMemory(char const*, macho_header const*, unsigned long long, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x7FFF5FC16E00   ImageLoaderMachOCompressed::~ImageLoaderMachOCompressed()
+0x7FFF5FC16E40   ImageLoaderMachOCompressed::~ImageLoaderMachOCompressed()
+0x7FFF5FC16EA0   ImageLoaderMachOCompressed::segmentCommandOffsets() const
+0x7FFF5FC16EB0   ImageLoaderMachOCompressed::libImage(unsigned int) const
+0x7FFF5FC16ED0   ImageLoaderMachOCompressed::libReExported(unsigned int) const
+0x7FFF5FC16EF0   ImageLoaderMachOCompressed::libIsUpward(unsigned int) const
+0x7FFF5FC16F10   ImageLoaderMachOCompressed::setLibImage(unsigned int, ImageLoader*, bool, bool)
+0x7FFF5FC16F40   ImageLoaderMachOCompressed::markLINKEDIT(ImageLoader::LinkContext const&, int)
+0x7FFF5FC17050   ImageLoaderMachOCompressed::rebase(ImageLoader::LinkContext const&)
+0x7FFF5FC17B90   ImageLoaderMachOCompressed::trieWalk(unsigned char const*, unsigned char const*, char const*)
+0x7FFF5FC17D30   ImageLoaderMachOCompressed::findExportedSymbol(char const*, ImageLoader const**) const
+0x7FFF5FC17EB0   ImageLoaderMachOCompressed::containsSymbol(void const*) const
+0x7FFF5FC17EE0   ImageLoaderMachOCompressed::exportedSymbolAddress(ImageLoader::LinkContext const&, ImageLoader::Symbol const*, ImageLoader const*, bool) const
+0x7FFF5FC181B0   ImageLoaderMachOCompressed::exportedSymbolIsWeakDefintion(ImageLoader::Symbol const*) const
+0x7FFF5FC18260   ImageLoaderMachOCompressed::exportedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC18290   ImageLoaderMachOCompressed::exportedSymbolCount() const
+0x7FFF5FC182C0   ImageLoaderMachOCompressed::exportedSymbolIndexed(unsigned int) const
+0x7FFF5FC182F0   ImageLoaderMachOCompressed::importedSymbolCount() const
+0x7FFF5FC18320   ImageLoaderMachOCompressed::importedSymbolIndexed(unsigned int) const
+0x7FFF5FC18350   ImageLoaderMachOCompressed::importedSymbolName(ImageLoader::Symbol const*) const
+0x7FFF5FC18380   ImageLoaderMachOCompressed::resolveFlat(ImageLoader::LinkContext const&, char const*, bool, bool, ImageLoader const**)
+0x7FFF5FC18480   ImageLoaderMachOCompressed::resolveTwolevel(ImageLoader::LinkContext const&, ImageLoader const*, bool, char const*, bool, ImageLoader const**)
+0x7FFF5FC18650   ImageLoaderMachOCompressed::resolve(ImageLoader::LinkContext const&, char const*, unsigned char, long, ImageLoader const**, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x7FFF5FC18810   ImageLoaderMachOCompressed::bindAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x7FFF5FC188A0   ImageLoaderMachOCompressed::doBind(ImageLoader::LinkContext const&, bool)
+0x7FFF5FC18960   ImageLoaderMachOCompressed::eachBind(ImageLoader::LinkContext const&, unsigned long (ImageLoaderMachOCompressed::*)(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool))
+0x7FFF5FC19550   ImageLoaderMachOCompressed::updateOptimizedLazyPointers(ImageLoader::LinkContext const&)
+0x7FFF5FC19790   ImageLoaderMachOCompressed::doBindJustLazies(ImageLoader::LinkContext const&)
+0x7FFF5FC197B0   ImageLoaderMachOCompressed::eachLazyBind(ImageLoader::LinkContext const&, unsigned long (ImageLoaderMachOCompressed::*)(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool))
+0x7FFF5FC19D60   ImageLoaderMachOCompressed::doBindLazySymbol(unsigned long*, ImageLoader::LinkContext const&)
+0x7FFF5FC19F90   ImageLoaderMachOCompressed::doBindFastLazySymbol(unsigned int, ImageLoader::LinkContext const&, void (*)(), void (*)())
+0x7FFF5FC1A300   ImageLoaderMachOCompressed::initializeCoalIterator(ImageLoader::CoalIterator&, unsigned int)
+0x7FFF5FC1A350   ImageLoaderMachOCompressed::incrementCoalIterator(ImageLoader::CoalIterator&)
+0x7FFF5FC1A7A0   ImageLoaderMachOCompressed::getAddressCoalIterator(ImageLoader::CoalIterator&, ImageLoader::LinkContext const&)
+0x7FFF5FC1A800   ImageLoaderMachOCompressed::updateUsesCoalIterator(ImageLoader::CoalIterator&, unsigned long, ImageLoader*, ImageLoader::LinkContext const&)
+0x7FFF5FC1ADA0   ImageLoaderMachOCompressed::interposeAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x7FFF5FC1ADE0   ImageLoaderMachOCompressed::doInterpose(ImageLoader::LinkContext const&)
+0x7FFF5FC1AE50   ImageLoaderMachOCompressed::dynamicInterposeAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x7FFF5FC1AF20   ImageLoaderMachOCompressed::dynamicInterpose(ImageLoader::LinkContext const&)
+0x7FFF5FC1AF90   ImageLoaderMachOCompressed::findClosestSymbol(void const*, void const**) const
+0x7FFF5FC1B110   ImageLoaderMachO::inSharedCache() const
+0x7FFF5FC1B130   ImageLoaderMachOCompressed::isSubframeworkOf(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x7FFF5FC1B140   ImageLoaderMachOCompressed::hasSubLibrary(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x7FFF5FC1B150   ImageLoaderMachOCompressed::setDyldInfo(dyld_info_command const*)
+0x7FFF5FC1B160   ImageLoaderMachOCompressed::setSymbolTableInfo(macho_nlist const*, char const*, dysymtab_command const*)
+0x7FFF5FC1B166   CSCppTimeoutLock::CSCppTimeoutLock(unsigned int*, unsigned int)
+0x7FFF5FC1B21C   CSCppTimeoutLock::CSCppTimeoutLock(unsigned int*, unsigned int)
+0x7FFF5FC1B226   CSCppTimeoutLock::~CSCppTimeoutLock()
+0x7FFF5FC1B252   CSCppTimeoutLock::~CSCppTimeoutLock()
+0x7FFF5FC1B25C   CSCppDyldSharedMemoryPage::send_notice(unsigned int, unsigned int&, unsigned int&)
+0x7FFF5FC1B79D   _unw_init_local
+0x7FFF5FC1B7FC   _unw_get_reg
+0x7FFF5FC1B83B   _unw_set_reg
+0x7FFF5FC1B8DC   _unw_step
+0x7FFF5FC1B8E7   _unw_get_proc_info
+0x7FFF5FC1B90C   _unw_resume
+0x7FFF5FC1B920   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::validReg(int)
+0x7FFF5FC1B930   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getReg(int)
+0x7FFF5FC1BA28   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::setReg(int, unsigned long long)
+0x7FFF5FC1BB20   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::validFloatReg(int)
+0x7FFF5FC1BB28   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getFloatReg(int)
+0x7FFF5FC1BB36   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::setFloatReg(int, double)
+0x7FFF5FC1BB44   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::step()
+0x7FFF5FC1BBAE   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getInfo(unw_proc_info_t*)
+0x7FFF5FC1BBCA   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::jumpto()
+0x7FFF5FC1BBD8   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::isSignalFrame()
+0x7FFF5FC1BBE4   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getFunctionName(char*, unsigned long, unsigned long long*)
+0x7FFF5FC1BC48   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::setInfoBasedOnIPRegister(bool)
+0x7FFF5FC1BCDA   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getRegisterName(int)
+0x7FFF5FC1BD00   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::~UnwindCursor()
+0x7FFF5FC1BD06   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::~UnwindCursor()
+0x7FFF5FC1BD0C   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86_64>::getInfoFromCompactEncodingSection(unsigned long long, libunwind::UnwindInfoSections const&)
+0x7FFF5FC1C004   libunwind::CompactUnwinder_x86_64<libunwind::LocalAddressSpace>::stepWithCompactEncoding(unsigned int, unsigned long long, libunwind::LocalAddressSpace&, libunwind::Registers_x86_64&)
+0x7FFF5FC1C06A   libunwind::CompactUnwinder_x86_64<libunwind::LocalAddressSpace>::stepWithCompactEncodingRBPFrame(unsigned int, unsigned long long, libunwind::LocalAddressSpace&, libunwind::Registers_x86_64&)
+0x7FFF5FC1C138   libunwind::CompactUnwinder_x86_64<libunwind::LocalAddressSpace>::stepWithCompactEncodingFrameless(unsigned int, unsigned long long, libunwind::LocalAddressSpace&, libunwind::Registers_x86_64&, bool)
+0x7FFF5FC1C424   libunwind::Registers_x86_64::setFloatRegister(int, double)
+0x7FFF5FC1C448   libunwind::Registers_x86_64::getFloatRegister(int) const
+0x7FFF5FC1C46B   __Unwind_RaiseException
+0x7FFF5FC1C567   _unwind_phase2
+0x7FFF5FC1C687   __Unwind_Resume
+0x7FFF5FC1C6EE   _unwind_phase2_forced
+0x7FFF5FC1C7F3   __Unwind_GetLanguageSpecificData
+0x7FFF5FC1C816   __Unwind_SetGR
+0x7FFF5FC1C820   __Unwind_GetIP
+0x7FFF5FC1C840   __Unwind_SetIP
+0x7FFF5FC1C855   __Unwind_GetRegionStart
+0x7FFF5FC1C878   __Unwind_DeleteException
+0x7FFF5FC1C895   libunwind::Registers_x86_64::jumpto()
+0x7FFF5FC1C8F0   _unw_getcontext
+0x7FFF5FC1C942   ___cxa_allocate_exception
+0x7FFF5FC1C984   __cxxabiv1::do_malloc(unsigned long)
+0x7FFF5FC1CA8B   ___cxa_free_exception
+0x7FFF5FC1CAA2   __cxxabiv1::do_free(void*)
+0x7FFF5FC1CBAA   ___cxa_throw
+0x7FFF5FC1CC23   __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+0x7FFF5FC1CC45   ___cxa_begin_catch
+0x7FFF5FC1CCB9   ___cxa_end_catch
+0x7FFF5FC1CD4B   ___cxa_decrement_exception_refcount
+0x7FFF5FC1CD97   ___cxa_rethrow
+0x7FFF5FC1CE00   __cxxabiv1::(anonymous namespace)::mutexor::~mutexor()
+0x7FFF5FC1CE20   std::get_unexpected()
+0x7FFF5FC1CE34   std::__unexpected(void (*)())
+0x7FFF5FC1CE48   std::unexpected()
+0x7FFF5FC1CE5F   std::get_terminate()
+0x7FFF5FC1CE73   std::__terminate(void (*)())
+0x7FFF5FC1CEC0   std::terminate()
+0x7FFF5FC1CF11   std::get_new_handler()
+0x7FFF5FC1CF22   std::bad_alloc::~bad_alloc()
+0x7FFF5FC1CF2C   std::bad_alloc::~bad_alloc()
+0x7FFF5FC1CF48   std::bad_alloc::what() const
+0x7FFF5FC1CF60   operator new(unsigned long)
+0x7FFF5FC1CFCE   operator new[](unsigned long)
+0x7FFF5FC1CFD9   operator delete(void*)
+0x7FFF5FC1CFF4   operator delete[](void*)
+0x7FFF5FC1D000   ___gxx_personality_v0
+0x7FFF5FC1D146   __cxxabiv1::scan_eh_tab(__cxxabiv1::(anonymous namespace)::scan_results&, _Unwind_Action, bool, _Unwind_Exception*, _Unwind_Context*)
+0x7FFF5FC1D668   __cxxabiv1::call_terminate(bool, _Unwind_Exception*)
+0x7FFF5FC1D690   __cxxabiv1::set_registers(_Unwind_Exception*, _Unwind_Context*, __cxxabiv1::(anonymous namespace)::scan_results const&)
+0x7FFF5FC1D6CD   ___cxa_call_unexpected
+0x7FFF5FC1D8F9   __cxxabiv1::readEncodedPointer(unsigned char const**, unsigned char)
+0x7FFF5FC1DA10   __cxxabiv1::exception_spec_can_catch(long long, unsigned char const*, unsigned char, __cxxabiv1::__shim_type_info const*, void*, _Unwind_Exception*)
+0x7FFF5FC1DAB9   __cxxabiv1::get_shim_type_info(unsigned long long, unsigned char const*, unsigned char, bool, _Unwind_Exception*)
+0x7FFF5FC1DB60   __cxxabiv1::readSLEB128(unsigned char const**)
+0x7FFF5FC1DBA9   ___cxa_pure_virtual
+0x7FFF5FC1DBBC   std::exception::~exception()
+0x7FFF5FC1DBC2   std::bad_exception::~bad_exception()
+0x7FFF5FC1DBC8   std::bad_exception::~bad_exception()
+0x7FFF5FC1DBD2   std::bad_exception::what() const
+0x7FFF5FC1DBE0   __cxxabiv1::__shim_type_info::noop1() const
+0x7FFF5FC1DBE6   __cxxabiv1::__shim_type_info::noop2() const
+0x7FFF5FC1DBEC   __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
+0x7FFF5FC1DBF6   __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
+0x7FFF5FC1DC12   __cxxabiv1::__class_type_info::~__class_type_info()
+0x7FFF5FC1DC1C   __cxxabiv1::__class_type_info::~__class_type_info()
+0x7FFF5FC1DC38   __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+0x7FFF5FC1DC42   __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+0x7FFF5FC1DC5E   __cxxabiv1::__pointer_type_info::~__pointer_type_info()
+0x7FFF5FC1DC68   __cxxabiv1::__pointer_type_info::~__pointer_type_info()
+0x7FFF5FC1DC84   __cxxabiv1::__fundamental_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x7FFF5FC1DC90   __cxxabiv1::__class_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x7FFF5FC1DD6A   __cxxabiv1::__class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const
+0x7FFF5FC1DDAE   __cxxabiv1::__si_class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const
+0x7FFF5FC1DE00   __cxxabiv1::__pointer_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x7FFF5FC1DF7E   __cxxabiv1::__class_type_info::process_static_type_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int) const
+0x7FFF5FC1DFE0   __cxxabiv1::__si_class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const
+0x7FFF5FC1E0B8   __cxxabiv1::__class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const
+0x7FFF5FC1E116   __cxxabiv1::__si_class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const
+0x7FFF5FC1E138   __cxxabiv1::__class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const
+0x7FFF5FC1E14A   std::type_info::~type_info()
+0x7FFF5FC1E160   _strcpy
+0x7FFF5FC1E200   _strlen
+0x7FFF5FC1E260   _strncpy
+0x7FFF5FC1E350   _arc4_stir
+0x7FFF5FC1E439   _arc4random
+0x7FFF5FC1E576   _arc4_fetch
+0x7FFF5FC1E5D9   _closedir
+0x7FFF5FC1E63E   _bcopy
+0x7FFF5FC1E64C   ___private_getcwd
+0x7FFF5FC1EBA3   ___getcwd
+0x7FFF5FC1ED43   _getcwd
+0x7FFF5FC1ED52   _getpagesize
+0x7FFF5FC1EDC7   _opendir$INODE64
+0x7FFF5FC1EDD6   ___opendir2$INODE64
+0x7FFF5FC1EE0C   ___opendir_common
+0x7FFF5FC1F231   _opendir_compar
+0x7FFF5FC1F249   __readdir_unlocked$INODE64
+0x7FFF5FC1F33E   _readdir$INODE64
+0x7FFF5FC1F374   _readdir_r$INODE64
+0x7FFF5FC1F41C   _sysctl
+0x7FFF5FC1F600   _sysctlbyname
+0x7FFF5FC1F6F4   _telldir$INODE64
+0x7FFF5FC1F7AE   __reclaim_telldir
+0x7FFF5FC1F7EA   _usleep
+0x7FFF5FC1F826   _nanosleep
+0x7FFF5FC1F9C4   _heapsort
+0x7FFF5FC1FCAF   _mergesort
+0x7FFF5FC206F5   _insertionsort
+0x7FFF5FC2078D   _qsort
+0x7FFF5FC207CA   __qsort
+0x7FFF5FC210F5   _reallocf
+0x7FFF5FC21132   _realpath$DARWIN_EXTSN
+0x7FFF5FC218F6   _strdup
+0x7FFF5FC2193C   _strnlen
+0x7FFF5FC21957   _strrchr
+0x7FFF5FC21973   _strstr
+0x7FFF5FC219ED   _gettimeofday
+0x7FFF5FC21AB3   _strlcpy
+0x7FFF5FC21B0E   _strcat
+0x7FFF5FC21B4E   _strlcat
+0x7FFF5FC21BCC   _dirfd
+0x7FFF5FC21BED   __simple_getenv
+0x7FFF5FC21C84   __simple_vdprintf
+0x7FFF5FC21CD8   __flush_reset
+0x7FFF5FC21CF4   ___simple_bprintf
+0x7FFF5FC22670   __flush
+0x7FFF5FC226CF   __simple_dprintf
+0x7FFF5FC2279D   __simple_salloc
+0x7FFF5FC22804   __enlarge
+0x7FFF5FC22903   __simple_vsprintf
+0x7FFF5FC2291F   __simple_sprintf
+0x7FFF5FC229B0   __simple_string
+0x7FFF5FC229C0   __simple_sfree
+0x7FFF5FC22A23   _dec
+0x7FFF5FC22CF4   _hex
+0x7FFF5FC2301B   _udec
+0x7FFF5FC231BC   _ydec
+0x7FFF5FC233B8   _OSAtomicAnd32Barrier$VARIANT$up
+0x7FFF5FC233C8   _OSAtomicAnd32$VARIANT$mp
+0x7FFF5FC233D8   _OSAtomicOr32Barrier$VARIANT$up
+0x7FFF5FC233E8   _OSAtomicOr32$VARIANT$mp
+0x7FFF5FC233F8   _OSAtomicXor32Barrier$VARIANT$up
+0x7FFF5FC23408   _OSAtomicXor32Barrier
+0x7FFF5FC23418   _OSAtomicAnd32OrigBarrier$VARIANT$up
+0x7FFF5FC23424   _OSAtomicAnd32Orig$VARIANT$mp
+0x7FFF5FC23434   _OSAtomicOr32OrigBarrier$VARIANT$up
+0x7FFF5FC23440   _OSAtomicOr32Orig$VARIANT$mp
+0x7FFF5FC23450   _OSAtomicXor32OrigBarrier$VARIANT$up
+0x7FFF5FC2345C   _OSAtomicXor32Orig$VARIANT$mp
+0x7FFF5FC2346C   _OSAtomicCompareAndSwap32Barrier$VARIANT$up
+0x7FFF5FC23478   _OSAtomicCompareAndSwap32$VARIANT$mp
+0x7FFF5FC23488   _OSAtomicCompareAndSwap64Barrier$VARIANT$up
+0x7FFF5FC23498   _OSAtomicCompareAndSwap64Barrier
+0x7FFF5FC234A8   _OSAtomicAdd32Barrier$VARIANT$up
+0x7FFF5FC234B0   _OSAtomicAdd32$VARIANT$mp
+0x7FFF5FC234BC   _OSAtomicIncrement32Barrier$VARIANT$up
+0x7FFF5FC234C8   _OSAtomicIncrement32$VARIANT$mp
+0x7FFF5FC234D4   _OSAtomicDecrement32Barrier$VARIANT$up
+0x7FFF5FC234E0   _OSAtomicDecrement32Barrier
+0x7FFF5FC234EC   _OSAtomicAdd64Barrier$VARIANT$up
+0x7FFF5FC234F8   _OSAtomicAdd64Barrier
+0x7FFF5FC23504   _OSAtomicIncrement64Barrier$VARIANT$up
+0x7FFF5FC23514   _OSAtomicIncrement64Barrier
+0x7FFF5FC23524   _OSAtomicDecrement64Barrier$VARIANT$up
+0x7FFF5FC23534   _OSAtomicDecrement64$VARIANT$mp
+0x7FFF5FC23544   _OSAtomicTestAndSetBarrier$VARIANT$up
+0x7FFF5FC23568   _OSAtomicTestAndSetBarrier
+0x7FFF5FC2358C   _OSAtomicTestAndClearBarrier$VARIANT$up
+0x7FFF5FC235B0   _OSAtomicTestAndClear$VARIANT$mp
+0x7FFF5FC235D4   _OSMemoryBarrier
+0x7FFF5FC235D8   _OSAtomicEnqueue
+0x7FFF5FC235FC   _OSAtomicDequeue
+0x7FFF5FC2361C   _OSAtomicFifoEnqueue
+0x7FFF5FC2363C   _OSAtomicFifoDequeue
+0x7FFF5FC23660   _preempt
+0x7FFF5FC23674   _backoff
+0x7FFF5FC23686   __OSSpinLockLockSlow
+0x7FFF5FC23703   __os_lock_corruption_abort
+0x7FFF5FC23705   __spin_lock
+0x7FFF5FC2371A   __spin_lock_try
+0x7FFF5FC2372E   __spin_unlock
+0x7FFF5FC23733   __os_semaphore_create
+0x7FFF5FC23784   __os_semaphore_dispose
+0x7FFF5FC237C0   __platform_strchr$VARIANT$Generic
+0x7FFF5FC23840   __platform_strchr$VARIANT$Haswell
+0x7FFF5FC238B0   _ffs
+0x7FFF5FC238C0   _ffsll
+0x7FFF5FC238D0   _fls
+0x7FFF5FC238E0   _flsll
+0x7FFF5FC23900   _strncmp
+0x7FFF5FC23A60   _memmove
+0x7FFF5FC24230   _longcopy
+0x7FFF5FC24420   __platform_memchr$VARIANT$Generic
+0x7FFF5FC24500   __platform_memchr$VARIANT$Haswell
+0x7FFF5FC245C0   _strcmp
+0x7FFF5FC246C0   __platform_memset
+0x7FFF5FC246F0   __platform_bzero
+0x7FFF5FC24780   _memcmp
+0x7FFF5FC248BA   _pthread_exit
+0x7FFF5FC248F9   __pthread_exit
+0x7FFF5FC24BF1   __pthread_set_self
+0x7FFF5FC24C5F   __pthread_testcancel
+0x7FFF5FC24CAA   __pthread_exit_if_canceled
+0x7FFF5FC24CF0   __pthread_introspection_hook_callout_thread_destroy
+0x7FFF5FC24D34   __pthread_introspection_hook_callout_thread_terminate
+0x7FFF5FC24DA5   _pthread_testcancel
+0x7FFF5FC24DCC   __plockstat_never_fired
+0x7FFF5FC24DCE   __pthread_mutex_init
+0x7FFF5FC24EFE   ___mtx_droplock
+0x7FFF5FC25136   ___mtx_markprepost
+0x7FFF5FC251EA   _pthread_mutex_lock
+0x7FFF5FC251F1   __pthread_mutex_lock
+0x7FFF5FC25490   _pthread_mutex_unlock
+0x7FFF5FC25586   __pthread_mutex_check_init
+0x7FFF5FC25607   _pthread_mutex_destroy
+0x7FFF5FC256A0   ___pthread_abort
+0x7FFF5FC256D1   ___pthread_abort_reason
+0x7FFF5FC25785   __pthread_tsd_cleanup
+0x7FFF5FC25786   _bzero
+0x7FFF5FC2578C   ___pthread_set_self
+0x7FFF5FC25799   _clock_get_time
+0x7FFF5FC2586B   _host_info
+0x7FFF5FC25A14   __kernelrpc_mach_port_allocate
+0x7FFF5FC25AF6   __kernelrpc_mach_port_deallocate
+0x7FFF5FC25BB6   __kernelrpc_mach_port_mod_refs
+0x7FFF5FC25C7C   __kernelrpc_mach_vm_allocate
+0x7FFF5FC25D6A   __kernelrpc_mach_vm_deallocate
+0x7FFF5FC25E2F   __kernelrpc_mach_vm_protect
+0x7FFF5FC25EFB   _semaphore_create
+0x7FFF5FC25FFD   _semaphore_destroy
+0x7FFF5FC260B9   _vm_copy
+0x7FFF5FC26182   _mach_init
+0x7FFF5FC261A0   _mach_init_doit
+0x7FFF5FC26222   _mach_absolute_time
+0x7FFF5FC2626C   _mach_msg
+0x7FFF5FC26390   __kernelrpc_mach_vm_allocate_trap
+0x7FFF5FC2639C   __kernelrpc_mach_vm_deallocate_trap
+0x7FFF5FC263A8   __kernelrpc_mach_vm_protect_trap
+0x7FFF5FC263B4   __kernelrpc_mach_vm_map_trap
+0x7FFF5FC263C0   __kernelrpc_mach_port_allocate_trap
+0x7FFF5FC263CC   __kernelrpc_mach_port_destroy_trap
+0x7FFF5FC263D8   __kernelrpc_mach_port_deallocate_trap
+0x7FFF5FC263E4   __kernelrpc_mach_port_mod_refs_trap
+0x7FFF5FC263F0   __kernelrpc_mach_port_move_member_trap
+0x7FFF5FC263FC   __kernelrpc_mach_port_insert_right_trap
+0x7FFF5FC26408   __kernelrpc_mach_port_insert_member_trap
+0x7FFF5FC26414   __kernelrpc_mach_port_extract_member_trap
+0x7FFF5FC26420   __kernelrpc_mach_port_construct_trap
+0x7FFF5FC2642C   __kernelrpc_mach_port_destruct_trap
+0x7FFF5FC26438   _mach_reply_port
+0x7FFF5FC26444   _thread_self_trap
+0x7FFF5FC26450   _task_self_trap
+0x7FFF5FC2645C   _host_self_trap
+0x7FFF5FC26468   _mach_msg_trap
+0x7FFF5FC26474   _mach_msg_overwrite_trap
+0x7FFF5FC26480   _semaphore_signal_trap
+0x7FFF5FC2648C   _semaphore_signal_all_trap
+0x7FFF5FC26498   _semaphore_signal_thread_trap
+0x7FFF5FC264A4   _semaphore_wait_trap
+0x7FFF5FC264B0   _semaphore_wait_signal_trap
+0x7FFF5FC264BC   _semaphore_timedwait_trap
+0x7FFF5FC264C8   _semaphore_timedwait_signal_trap
+0x7FFF5FC264D4   __kernelrpc_mach_port_guard_trap
+0x7FFF5FC264E0   __kernelrpc_mach_port_unguard_trap
+0x7FFF5FC264EC   _task_name_for_pid
+0x7FFF5FC264F8   _task_for_pid
+0x7FFF5FC26504   _pid_for_task
+0x7FFF5FC26510   _macx_swapon
+0x7FFF5FC2651C   _macx_swapoff
+0x7FFF5FC26528   _macx_triggers
+0x7FFF5FC26534   _macx_backing_store_suspend
+0x7FFF5FC26540   _macx_backing_store_recovery
+0x7FFF5FC2654C   _swtch_pri
+0x7FFF5FC26558   _swtch
+0x7FFF5FC26564   _syscall_thread_switch
+0x7FFF5FC26570   _clock_sleep_trap
+0x7FFF5FC2657C   _mach_timebase_info
+0x7FFF5FC26588   _mach_wait_until
+0x7FFF5FC26594   _mk_timer_create
+0x7FFF5FC265A0   _mk_timer_destroy
+0x7FFF5FC265AC   _mk_timer_arm
+0x7FFF5FC265B8   _mk_timer_cancel
+0x7FFF5FC265D0   ___commpage_gettimeofday
+0x7FFF5FC26641   _mig_get_reply_port
+0x7FFF5FC26664   _mig_dealloc_reply_port
+0x7FFF5FC266D4   _mig_put_reply_port
+0x7FFF5FC266D5   _thread_switch
+0x7FFF5FC266DA   _mach_host_self
+0x7FFF5FC266DF   _mach_thread_self
+0x7FFF5FC266E4   ___error
+0x7FFF5FC266FA   _cerror_nocancel
+0x7FFF5FC2671F   _cerror
+0x7FFF5FC26748   _fcntl
+0x7FFF5FC26841   _ioctl
+0x7FFF5FC268E9   _kill
+0x7FFF5FC268F3   _mmap
+0x7FFF5FC2698B   _unlink
+0x7FFF5FC269AA   ___inc_remove_counter
+0x7FFF5FC269B3   _mach_port_allocate
+0x7FFF5FC269F3   _mach_port_deallocate
+0x7FFF5FC26A1E   _mach_port_mod_refs
+0x7FFF5FC26A61   _mach_vm_allocate
+0x7FFF5FC26AD7   _mach_vm_deallocate
+0x7FFF5FC26B37   _mach_vm_protect
+0x7FFF5FC26B8F   _vm_allocate
+0x7FFF5FC26BB6   _vm_deallocate
+0x7FFF5FC26BBB   _vm_protect
+0x7FFF5FC26BC0   _munmap
+0x7FFF5FC26C14   ___bsdthread_create
+0x7FFF5FC26C2C   ___bsdthread_ctl
+0x7FFF5FC26C44   ___bsdthread_register
+0x7FFF5FC26C5C   ___bsdthread_terminate
+0x7FFF5FC26C74   _connect
+0x7FFF5FC26C8C   ___disable_threadsignal
+0x7FFF5FC26CA4   __exit
+0x7FFF5FC26CBC   ___fcntl
+0x7FFF5FC26CD4   _getattrlist
+0x7FFF5FC26CEC   ___getdirentries64
+0x7FFF5FC26D04   _getpid
+0x7FFF5FC26D35   ___gettimeofday
+0x7FFF5FC26D54   ___ioctl
+0x7FFF5FC26D6C   ___kill
+0x7FFF5FC26D84   _lseek
+0x7FFF5FC26D9C   ___mmap
+0x7FFF5FC26DB4   ___munmap
+0x7FFF5FC26DCC   _open
+0x7FFF5FC26DE4   ___posix_spawn
+0x7FFF5FC26DFC   ___proc_info
+0x7FFF5FC26E14   ___process_policy
+0x7FFF5FC26E2C   ___psynch_cvbroad
+0x7FFF5FC26E44   ___psynch_cvclrprepost
+0x7FFF5FC26E5C   ___psynch_cvsignal
+0x7FFF5FC26E74   ___psynch_cvwait
+0x7FFF5FC26E8C   ___psynch_mutexdrop
+0x7FFF5FC26EA4   ___psynch_mutexwait
+0x7FFF5FC26EBC   ___pthread_canceled
+0x7FFF5FC26ED4   ___pthread_kill
+0x7FFF5FC26EEC   ___pthread_markcancel
+0x7FFF5FC26F04   ___pthread_sigmask
+0x7FFF5FC26F1C   ___semwait_signal
+0x7FFF5FC26F34   ___semwait_signal_nocancel
+0x7FFF5FC26F4C   _sendto
+0x7FFF5FC26F64   ___sigwait
+0x7FFF5FC26F7C   _syscall
+0x7FFF5FC26F94   ___sysctl
+0x7FFF5FC26FAC   ___sysctlbyname
+0x7FFF5FC26FC4   ___thread_selfid
+0x7FFF5FC26FDC   ___unlink
+0x7FFF5FC26FF4   ___workq_kernreturn
+0x7FFF5FC2700C   ___workq_open
+0x7FFF5FC27024   _close
+0x7FFF5FC2703C   _csops
+0x7FFF5FC27054   _fstat64
+0x7FFF5FC2706C   _fstatfs64
+0x7FFF5FC27084   _issetugid
+0x7FFF5FC2709C   _lstat64
+0x7FFF5FC270B4   _posix_madvise
+0x7FFF5FC270CC   _pread
+0x7FFF5FC270E4   _proc_rlimit_control
+0x7FFF5FC270FC   _read
+0x7FFF5FC27114   _readlink
+0x7FFF5FC2712C   _socket
+0x7FFF5FC27144   _stat64
+0x7FFF5FC2715C   _statfs64
+0x7FFF5FC27174   _write
+attributes     dependent dylibs
+no Designated Requirements info
+offset      length  data-kind
+for arch i386:
+no weak binding
+lazy binding information (from section records and indirect symbol table):
+segment section          address    index  dylib            symbol
+export information (from symbol table):
+0x8FE2EC08 _dyldVersionNumber
+0x8FE2EBE0 _dyldVersionString
+0x8FE3552C _dyld_all_image_infos
+0x8FE01084 _dyld_fatal_error
+0x8FE34C88 _dyld_shared_cache_ranges
+0x8FE5D4C0 _error_string
+no compressed rebase info
+no compressed binding info
+no compressed binding info
+no compressed dyld info
+no compressed export info
+0x8FE01000   __dyld_start
+0x8FE01084   _dyld_fatal_error
+0x8FE01086   dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*)
+0x8FE01282   coresymbolication_unload_image(CSCppDyldSharedMemoryPage*, ImageLoader const*)
+0x8FE01361   coresymbolication_load_image(CSCppDyldSharedMemoryPage*, ImageLoader const*, unsigned long long)
+0x8FE01443   dyld::addMappedRange(ImageLoader*, unsigned long, unsigned long)
+0x8FE014E8   dyld::removedMappedRanges(ImageLoader*)
+0x8FE01530   dyld::findMappedRange(unsigned long)
+0x8FE01575   dyld::mkstringf(char const*, ...)
+0x8FE015D6   dyld::throwf(char const*, ...)
+0x8FE01665   dyld::vlog(char const*, char*)
+0x8FE0187C   dyld::log(char const*, ...)
+0x8FE0189C   dyld::vwarn(char const*, char*)
+0x8FE018E7   dyld::warn(char const*, ...)
+0x8FE01937   dyld::syncAllImages()
+0x8FE019CA   dyld::removeImage(ImageLoader*)
+0x8FE01D5C   dyld::notifySingle(dyld_image_states, ImageLoader const*)
+0x8FE01F70   dyld::runImageStaticTerminators(ImageLoader*)
+0x8FE0205D   dyld::getExecutablePath()
+0x8FE0206E   dyld::initializeMainExecutable()
+0x8FE02198   dyld::runAllStaticTerminators(void*)
+0x8FE02245   dyld::mainExecutablePrebound()
+0x8FE02274   dyld::mainExecutable()
+0x8FE02285   dyld::processDyldEnvironmentVariable(char const*, char const*, char const*)
+0x8FE0298D   dyld::appendParsedColonList(char const*, char const*, char const* const**)
+0x8FE02A25   dyld::parseColonList(char const*, char const*)
+0x8FE02D1B   dyld::validImage(ImageLoader const*)
+0x8FE02D58   dyld::getImageCount()
+0x8FE02D72   dyld::getIndexedImage(unsigned int)
+0x8FE02D9C   dyld::findImageByMachHeader(mach_header const*)
+0x8FE02DA5   dyld::findImageContainingAddress(void const*)
+0x8FE02DAE   dyld::findImageContainingSymbol(void const*)
+0x8FE02DF3   dyld::findLoadedImage(stat const&)
+0x8FE02E52   dyld::inSharedCache(char const*)
+0x8FE02E89   dyld::findInSharedCacheImage(char const*, bool, stat const*, macho_header const**, char const**, long*)
+0x8FE03022   dyld::load(char const*, dyld::LoadContext const&)
+0x8FE03365   dyld::loadPhase0(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE03481   dyld::openSharedCacheFile()
+0x8FE03559   dyld::cloneImage(ImageLoader*)
+0x8FE0365B   dyld::loadPhase6(int, stat const&, char const*, dyld::LoadContext const&)
+0x8FE03ACF   dyld::loadFromMemory(unsigned char const*, unsigned long long, char const*)
+0x8FE03C41   dyld::fatFindBest(fat_header const*, unsigned long long*, unsigned long long*)
+0x8FE03CA3   dyld::addImage(ImageLoader*)
+0x8FE03E0A   dyld::registerAddCallback(void (*)(mach_header const*, long))
+0x8FE03EB3   dyld::registerRemoveCallback(void (*)(mach_header const*, long))
+0x8FE03F12   dyld::clearErrorMessage()
+0x8FE03F24   dyld::setErrorMessage(char const*)
+0x8FE03F52   dyld::getErrorMessage()
+0x8FE03F63   dyld::halt(char const*)
+0x8FE03FBE   dyld::bindLazySymbol(mach_header const*, unsigned long*)
+0x8FE04059   dyld::fastBindLazySymbol(ImageLoader**, unsigned long)
+0x8FE04120   dyld::registerUndefinedHandler(void (*)(char const*))
+0x8FE04134   dyld::flatFindExportedSymbol(char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x8FE04159   dyld::findExportedSymbol(char const*, bool, ImageLoader::Symbol const**, ImageLoader const**)
+0x8FE04272   dyld::findCoalescedExportedSymbol(char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x8FE0429A   dyld::flatFindExportedSymbolWithHint(char const*, char const*, ImageLoader::Symbol const**, ImageLoader const**)
+0x8FE04337   dyld::getCoalescedImages(ImageLoader**)
+0x8FE0438F   dyld::registerImageStateSingleChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x8FE044EE   dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x8FE045D8   dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x8FE04A73   dyld::link(ImageLoader*, bool, bool, ImageLoader::RPathChain const&)
+0x8FE04B54   dyld::garbageCollectImages()
+0x8FE04F6A   dyld::runInitializers(ImageLoader*)
+0x8FE04FDA   dyld::preflight(ImageLoader*, ImageLoader::RPathChain const&)
+0x8FE05069   dyld::preflight_finally(ImageLoader*)
+0x8FE050B2   dyld::processIsRestricted()
+0x8FE050C4   dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*)
+0x8FE05D62   dyld::useSimulatorDyld(int, macho_header const*, char const*, int, char const**, char const**, char const**, unsigned long*)
+0x8FE061BF   dyld::setContext(macho_header const*, int, char const**, char const**, char const**)
+0x8FE06394   dyld::checkLoadCommandEnvironmentVariables()
+0x8FE06530   dyld::checkVersionedPaths()
+0x8FE0680B   dyld::checkEnvironmentVariables(char const**, bool)
+0x8FE06A7F   dyld::updateAllImages(dyld_image_states, unsigned int, dyld_image_info const*)
+0x8FE06AA4   dyld::mapSharedCache()
+0x8FE0796C   dyld::_shared_region_check_np(unsigned long long*)
+0x8FE079A0   dyld::_shared_region_map_and_slide_np(int, unsigned int, shared_file_mapping_np const*, int, long, void*, unsigned long)
+0x8FE07BF8   dyld::removePathWithPrefix(char const**, char const*)
+0x8FE07C6D   dyld::paths_expand_roots(char const**, char const*, char const*)
+0x8FE07D06   dyld::checkDylibOverride(char const*)
+0x8FE07EE0   dyld::getDylibVersionAndInstallname(char const*, unsigned int*, char*)
+0x8FE08084   dyld::libraryLocator(char const*, bool, char const*, ImageLoader::RPathChain const*)
+0x8FE080CB   dyld::terminationRecorder(ImageLoader*)
+0x8FE08120   dyld::undefinedHandler(char const*)
+0x8FE08138   dyld::getMappedRegions(ImageLoader::MappedRegion*)
+0x8FE08182   dyld::notifyBatch(dyld_image_states)
+0x8FE0819E   dyld::registerDOFs(std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> > const&)
+0x8FE083BF   dyld::clearAllDepths()
+0x8FE083E9   dyld::printAllDepths()
+0x8FE08437   dyld::imageCount()
+0x8FE08451   dyld::setNewProgramVars(ProgramVars const&)
+0x8FE084B9   dyld::setErrorStrings(unsigned int, char const*, char const*, char const*)
+0x8FE084EE   dyld::setRunInitialzersOldWay()
+0x8FE08500   dyld::addDynamicReference(ImageLoader*, ImageLoader*)
+0x8FE085AE   dyld::getProcessInfo()
+0x8FE085C1   dyld::imageSorter(void const*, void const*)
+0x8FE085E2   dyld::checkandAddImage(ImageLoader*, dyld::LoadContext const&)
+0x8FE08736   dyld::loadPhase1(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE08841   dyld::loadPhase2(char const*, char const*, dyld::LoadContext const&, char const* const*, char const* const*, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE08A54   dyld::loadPhase3(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE091DA   dyld::loadPhase4(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE092AB   dyld::loadPhase5(char const*, char const*, dyld::LoadContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >*)
+0x8FE096F9   dyld::getFrameworkPartialPath(char const*)
+0x8FE098A0   ___clang_call_terminate
+0x8FE098B6   std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> >::erase(std::__1::__wrap_iter<ImageLoader::DynamicReference const*>, std::__1::__wrap_iter<ImageLoader::DynamicReference const*>)
+0x8FE0992F   std::__1::__wrap_iter<ImageLoader::DynamicReference*> std::__1::remove_if<std::__1::__wrap_iter<ImageLoader::DynamicReference*>, dyld::RefUsesImage>(std::__1::__wrap_iter<ImageLoader::DynamicReference*>, std::__1::__wrap_iter<ImageLoader::DynamicReference*>, dyld::RefUsesImage)
+0x8FE0998E   std::__1::vector<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)> >::insert(std::__1::__wrap_iter<char const* (* const*)(dyld_image_states, unsigned int, dyld_image_info const*)>, char const* (* const&)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x8FE09C1C   std::__1::vector<ImageLoader*, std::__1::allocator<ImageLoader*> >::reserve(unsigned long)
+0x8FE09CE2   std::__1::vector<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)> >::reserve(unsigned long)
+0x8FE09DA8   std::__1::vector<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF> >::reserve(unsigned long)
+0x8FE09E6E   std::__1::__split_buffer<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF>&>::~__split_buffer()
+0x8FE09EA4   std::__1::__split_buffer<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)>&>::~__split_buffer()
+0x8FE09EDA   std::__1::__split_buffer<ImageLoader*, std::__1::allocator<ImageLoader*>&>::~__split_buffer()
+0x8FE09F10   void std::__1::vector<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)> >::__push_back_slow_path<char const* (* const)(dyld_image_states, unsigned int, dyld_image_info const*)>(char const* (* const&)(dyld_image_states, unsigned int, dyld_image_info const*))
+0x8FE0A00C   std::__1::__split_buffer<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), std::__1::allocator<char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)>&>::~__split_buffer()
+0x8FE0A042   void std::__1::vector<void (*)(mach_header const*, long), std::__1::allocator<void (*)(mach_header const*, long)> >::__push_back_slow_path<void (* const)(mach_header const*, long)>(void (* const&)(mach_header const*, long))
+0x8FE0A13E   void std::__1::vector<dyld::DylibOverride, std::__1::allocator<dyld::DylibOverride> >::__push_back_slow_path<dyld::DylibOverride const>(dyld::DylibOverride const&)
+0x8FE0A23E   std::__1::__split_buffer<dyld::DylibOverride, std::__1::allocator<dyld::DylibOverride>&>::~__split_buffer()
+0x8FE0A274   void std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> >::__push_back_slow_path<ImageLoader::DynamicReference const>(ImageLoader::DynamicReference const&)
+0x8FE0A374   std::__1::__split_buffer<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference>&>::~__split_buffer()
+0x8FE0A3AA   void std::__1::vector<dyld::RegisteredDOF, std::__1::allocator<dyld::RegisteredDOF> >::__push_back_slow_path<dyld::RegisteredDOF const>(dyld::RegisteredDOF const&)
+0x8FE0A4AA   void std::__1::vector<ImageLoader*, std::__1::allocator<ImageLoader*> >::__push_back_slow_path<ImageLoader* const>(ImageLoader* const&)
+0x8FE0A5A6   std::__1::__vector_base<char const*, std::__1::allocator<char const*> >::~__vector_base()
+0x8FE0A5D8   void std::__1::vector<char const*, std::__1::allocator<char const*> >::__push_back_slow_path<char const* const>(char const* const&)
+0x8FE0A6D4   std::__1::__split_buffer<char const*, std::__1::allocator<char const*>&>::~__split_buffer()
+0x8FE0A70B   __NSGetExecutablePath
+0x8FE0A778   __dyld_image_count
+0x8FE0A7B0   __dyld_get_image_header
+0x8FE0A805   __dyld_get_image_vmaddr_slide
+0x8FE0A85A   __dyld_get_image_slide
+0x8FE0A8AF   __dyld_get_image_name
+0x8FE0A904   __dyld_get_image_header_containing_address
+0x8FE0A959   __dyld_register_func_for_add_image
+0x8FE0A998   __dyld_register_func_for_remove_image
+0x8FE0A9D7   __dyld_lookup_and_bind_fully
+0x8FE0AAF9   __dyld_lookup_and_bind_with_hint
+0x8FE0ABF1   _NSLookupAndBindSymbol
+0x8FE0AC4F   _NSLookupAndBindSymbolWithHint
+0x8FE0AD0E   _NSAddImage
+0x8FE0AD92   addImage(void*, char const*, bool, bool, bool, bool)
+0x8FE0B0A6   _NSAddLibrary
+0x8FE0B117   _NSAddLibraryWithSearching
+0x8FE0B188   _NSIsSymbolNameDefinedInImage
+0x8FE0B201   _NSLookupSymbolInImage
+0x8FE0B40A   _NSIsSymbolNameDefinedWithHint
+0x8FE0B4CB   _NSNameOfSymbol
+0x8FE0B524   _NSAddressOfSymbol
+0x8FE0B5B0   _NSModuleForSymbol
+0x8FE0B5FF   __dyld_all_twolevel_modules_prebound
+0x8FE0B635   __dyld_bind_objc_module
+0x8FE0B670   __dyld_bind_fully_image_containing_address
+0x8FE0B727   __dyld_image_containing_address
+0x8FE0B774   _NSCreateObjectFileImageFromFile
+0x8FE0B86C   createObjectImageFile(ImageLoader*, void const*, unsigned long)
+0x8FE0B8F2   _NSCreateObjectFileImageFromMemory
+0x8FE0B9D0   _NSDestroyObjectFileImage
+0x8FE0BB31   _NSHasModInitObjectFileImage
+0x8FE0BB7E   _NSSymbolDefinitionCountInObjectFileImage
+0x8FE0BBC5   _NSSymbolDefinitionNameInObjectFileImage
+0x8FE0BC27   _NSSymbolReferenceCountInObjectFileImage
+0x8FE0BC6E   _NSSymbolReferenceNameInObjectFileImage
+0x8FE0BCF5   _NSGetSectionDataInObjectFileImage
+0x8FE0BD7E   _NSIsSymbolDefinedInObjectFileImage
+0x8FE0BDEA   _NSLinkModule
+0x8FE0BFBF   _NSLookupSymbolInModule
+0x8FE0C036   _NSNameOfModule
+0x8FE0C08B   _NSLibraryNameForModule
+0x8FE0C0E0   _NSUnLinkModule
+0x8FE0C25D   _NSLinkEditError
+0x8FE0C29D   __dyld_fork_child
+0x8FE0C2F8   __dyld_launched_prebound
+0x8FE0C330   __dyld_func_lookup
+0x8FE0C3AC   unimplemented()
+0x8FE0C3C6   _dlopen_preflight
+0x8FE0C5C8   dlerrorClear()
+0x8FE0C602   dlerrorSet(char const*)
+0x8FE0C648   _dlopen
+0x8FE0CA07   _dlclose
+0x8FE0CA9B   _dladdr
+0x8FE0CBCA   _dlerror
+0x8FE0CC35   _dlsym
+0x8FE0D01C   __dyld_get_all_image_infos
+0x8FE0D02F   _dyld_register_image_state_change_handler
+0x8FE0D09F   _dyld_image_path_containing_address
+0x8FE0D0F4   _dyld_shared_cache_some_image_overridden
+0x8FE0D108   _dyld_dynamic_interpose
+0x8FE0D19C   registerThreadHelpers(dyld::LibSystemHelpers const*)
+0x8FE0D1BE   _dyld_make_delayed_module_initializer_calls()
+0x8FE0D209   _dyld_set_variable(char const*, char const*)
+0x8FE0D254   _dyld_add_image_reexport(mach_header const*, mach_header const*)
+0x8FE0D291   client_dyld_find_unwind_sections(void*, dyld_unwind_sections*)
+0x8FE0D2C6   client_dyld_lookup_and_bind(char const*, void**, __NSModule**)
+0x8FE0D38E   _dyld_install_handlers(void*, void*, void*)
+0x8FE0D3BC   _dyld_register_binding_handler(void* (*)(char const*, char const*, void*), ImageLoader::BindingOptions)
+0x8FE0D408   NSLookupSymbolInImage_GameCompat(mach_header const*, char const*, unsigned int)
+0x8FE0D570   NSMakePrivateModulePublic(__NSModule*)
+0x8FE0D5B8   client_NSIsSymbolNameDefined(char const*)
+0x8FE0D604   _dyld_call_module_initializers_for_dylib(mach_header const*)
+0x8FE0D62E   _dyld_link_module(__NSObjectFileImage*, unsigned long, char const*, unsigned int)
+0x8FE0D7BE   void std::__1::vector<__NSObjectFileImage*, std::__1::allocator<__NSObjectFileImage*> >::__push_back_slow_path<__NSObjectFileImage* const>(__NSObjectFileImage* const&)
+0x8FE0D8BA   std::__1::__split_buffer<__NSObjectFileImage*, std::__1::allocator<__NSObjectFileImage*>&>::~__split_buffer()
+0x8FE0D8EF   ___cxa_get_globals
+0x8FE0D97B   ___cxa_get_globals_fast
+0x8FE0D9B1   __dyld_find_unwind_sections
+0x8FE0DA0B   addImagesToAllImages(unsigned int, dyld_image_info const*)
+0x8FE0DAEF   notifyGDB(dyld_image_states, unsigned int, dyld_image_info const*)
+0x8FE0DB33   addNonSharedCacheImageUUID(dyld_uuid_info const&)
+0x8FE0DBC4   removeImageFromAllImages(mach_header const*)
+0x8FE0DD7B   setAlImageInfosHalt(char const*, unsigned long)
+0x8FE0DDA0   gdb_image_notifier(dyld_image_mode, unsigned int, dyld_image_info const*)
+0x8FE0DDA6   std::__1::vector<dyld_image_info, std::__1::allocator<dyld_image_info> >::reserve(unsigned long)
+0x8FE0DE8A   std::__1::vector<dyld_uuid_info, std::__1::allocator<dyld_uuid_info> >::reserve(unsigned long)
+0x8FE0DF6E   void std::__1::vector<dyld_uuid_info, std::__1::allocator<dyld_uuid_info> >::__push_back_slow_path<dyld_uuid_info const>(dyld_uuid_info const&)
+0x8FE0E0A8   std::__1::__split_buffer<dyld_uuid_info, std::__1::allocator<dyld_uuid_info>&>::~__split_buffer()
+0x8FE0E0E8   void std::__1::vector<dyld_image_info, std::__1::allocator<dyld_image_info> >::__push_back_slow_path<dyld_image_info const>(dyld_image_info const&)
+0x8FE0E216   std::__1::__split_buffer<dyld_image_info, std::__1::allocator<dyld_image_info>&>::~__split_buffer()
+0x8FE0E255   _abort
+0x8FE0E26F   ___assert_rtn
+0x8FE0E2C4   _fprintf
+0x8FE0E2EE   _localtime
+0x8FE0E2F5   _exit
+0x8FE0E30F   ___guard_setup
+0x8FE0E3D3   ___stack_chk_fail
+0x8FE0E3ED   __init_cpu_capabilities
+0x8FE0E3F2   _mach_error_string
+0x8FE0E403   _abort_message
+0x8FE0E42B   std::__1::__vector_base_common<true>::__throw_length_error() const
+0x8FE0E445   dyld::my_stat(char const*, stat*)
+0x8FE0E47C   dyld::my_open(char const*, int, int)
+0x8FE0E4BC   ImageLoader::ImageLoader(char const*, unsigned int)
+0x8FE0E592   ImageLoader::hash(char const*)
+0x8FE0E5B4   ImageLoader::deleteImage(ImageLoader*)
+0x8FE0E5C8   ImageLoader::~ImageLoader()
+0x8FE0E608   ImageLoader::~ImageLoader()
+0x8FE0E612   ImageLoader::~ImageLoader()
+0x8FE0E62C   ImageLoader::setFileInfo(int, unsigned long long, long)
+0x8FE0E650   ImageLoader::setMapped(ImageLoader::LinkContext const&)
+0x8FE0E674   ImageLoader::compare(ImageLoader const*) const
+0x8FE0E6B6   ImageLoader::setPath(char const*)
+0x8FE0E72C   ImageLoader::setPathUnowned(char const*)
+0x8FE0E784   ImageLoader::setPaths(char const*, char const*)
+0x8FE0E7C8   ImageLoader::getRealPath() const
+0x8FE0E7DA   ImageLoader::matchInstallPath() const
+0x8FE0E7EE   ImageLoader::setMatchInstallPath(bool)
+0x8FE0E80A   ImageLoader::statMatch(stat const&) const
+0x8FE0E834   ImageLoader::getShortName() const
+0x8FE0E868   ImageLoader::setLeaveMapped()
+0x8FE0E874   ImageLoader::setHideExports(bool)
+0x8FE0E890   ImageLoader::hasHiddenExports() const
+0x8FE0E8A4   ImageLoader::isLinked() const
+0x8FE0E8BE   ImageLoader::lastModified() const
+0x8FE0E8CA   ImageLoader::containsAddress(void const*) const
+0x8FE0E942   ImageLoader::overlapsWithAddressRange(void const*, void const*) const
+0x8FE0EA18   ImageLoader::getMappedRegions(ImageLoader::MappedRegion*&) const
+0x8FE0EA7C   ImageLoader::reExport(ImageLoader*)
+0x8FE0EADC   ImageLoader::dependsOn(ImageLoader*)
+0x8FE0EB2E   ImageLoader::findExportedSymbolInDependentImagesExcept(char const*, ImageLoader const**, ImageLoader const**&, ImageLoader const**, ImageLoader const**) const
+0x8FE0EC6E   ImageLoader::findExportedSymbolInDependentImages(char const*, ImageLoader::LinkContext const&, ImageLoader const**) const
+0x8FE0ECF2   ImageLoader::findExportedSymbolInImageOrDependentImages(char const*, ImageLoader::LinkContext const&, ImageLoader const**) const
+0x8FE0ED6A   ImageLoader::applyInterposing(ImageLoader::LinkContext const&)
+0x8FE0ED8A   ImageLoader::recursiveApplyInterposing(ImageLoader::LinkContext const&)
+0x8FE0EE2C   ImageLoader::interposedAddress(ImageLoader::LinkContext const&, unsigned long, ImageLoader const*, ImageLoader const*)
+0x8FE0EE9E   ImageLoader::addDynamicInterposingTuples(dyld_interpose_tuple const*, unsigned long)
+0x8FE0EF56   ImageLoader::link(ImageLoader::LinkContext const&, bool, bool, bool, ImageLoader::RPathChain const&)
+0x8FE0F1DC   ImageLoader::recursiveLoadLibraries(ImageLoader::LinkContext const&, bool, ImageLoader::RPathChain const&)
+0x8FE0F8AE   ImageLoader::recursiveUpdateDepth(unsigned int)
+0x8FE0F946   ImageLoader::recursiveRebase(ImageLoader::LinkContext const&)
+0x8FE0FA22   ImageLoader::recursiveBind(ImageLoader::LinkContext const&, bool, bool)
+0x8FE0FB4A   ImageLoader::weakBind(ImageLoader::LinkContext const&)
+0x8FE10068   ImageLoader::recursiveGetDOFSections(ImageLoader::LinkContext const&, std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >&)
+0x8FE100E4   ImageLoader::decrementDlopenReferenceCount()
+0x8FE100FE   ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&)
+0x8FE101C8   ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&)
+0x8FE10392   ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&)
+0x8FE1042E   ImageLoader::bindAllLazyPointers(ImageLoader::LinkContext const&, bool)
+0x8FE104B2   ImageLoader::allDependentLibrariesAsWhenPreBound() const
+0x8FE104C6   ImageLoader::markedUsedRecursive(std::__1::vector<ImageLoader::DynamicReference, std::__1::allocator<ImageLoader::DynamicReference> > const&)
+0x8FE10550   ImageLoader::setNeverUnloadRecursive()
+0x8FE105AC   ImageLoader::recursiveSpinLock(ImageLoader::recursive_lock&)
+0x8FE105EE   ImageLoader::printStatistics(unsigned int, ImageLoader::InitializerTimingList const&)
+0x8FE10934   printTime(char const*, unsigned long long, unsigned long long)
+0x8FE10AFC   commatize(unsigned long long, char*)
+0x8FE10BC0   ImageLoader::addSuffix(char const*, char const*, char*)
+0x8FE10C46   void std::__1::vector<ImageLoader::InterposeTuple, std::__1::allocator<ImageLoader::InterposeTuple> >::__push_back_slow_path<ImageLoader::InterposeTuple const>(ImageLoader::InterposeTuple const&)
+0x8FE10D58   std::__1::__split_buffer<ImageLoader::InterposeTuple, std::__1::allocator<ImageLoader::InterposeTuple>&>::~__split_buffer()
+0x8FE10D8E   void std::__1::vector<std::__1::pair<ImageLoader*, ImageLoader*>, std::__1::allocator<std::__1::pair<ImageLoader*, ImageLoader*> > >::__push_back_slow_path<std::__1::pair<ImageLoader*, ImageLoader*> const>(std::__1::pair<ImageLoader*, ImageLoader*> const&)
+0x8FE10E8E   std::__1::__split_buffer<std::__1::pair<ImageLoader*, ImageLoader*>, std::__1::allocator<std::__1::pair<ImageLoader*, ImageLoader*> >&>::~__split_buffer()
+0x8FE10EC4   std::__1::__vector_base<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >::~__vector_base()
+0x8FE10F04   ImageLoaderMachO::ImageLoaderMachO(macho_header const*, char const*, unsigned int, unsigned int*, unsigned int)
+0x8FE10FBA   ImageLoaderMachO::sniffLoadCommands(macho_header const*, char const*, bool*, unsigned int*, unsigned int*, ImageLoader::LinkContext const&, linkedit_data_command const**)
+0x8FE11380   ImageLoaderMachO::needsAddedLibSystemDepency(unsigned int, macho_header const*)
+0x8FE11460   ImageLoaderMachO::instantiateMainExecutable(macho_header const*, unsigned long, char const*, ImageLoader::LinkContext const&)
+0x8FE114F2   ImageLoaderMachO::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, ImageLoader::LinkContext const&)
+0x8FE1167E   ImageLoaderMachO::instantiateFromCache(macho_header const*, char const*, long, stat const&, ImageLoader::LinkContext const&)
+0x8FE1171E   ImageLoaderMachO::instantiateFromMemory(char const*, macho_header const*, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE117BE   ImageLoaderMachO::crashIfInvalidCodeSignature()
+0x8FE1181E   ImageLoaderMachO::parseLoadCmds()
+0x8FE11C68   ImageLoaderMachO::segHasRebaseFixUps(unsigned int) const
+0x8FE11CB6   ImageLoaderMachO::segHasBindFixUps(unsigned int) const
+0x8FE11D04   ImageLoaderMachO::segIsReadOnlyImport(unsigned int) const
+0x8FE11D60   ImageLoaderMachO::destroy()
+0x8FE11DB8   ImageLoaderMachO::UnmapSegments()
+0x8FE11F04   ImageLoaderMachO::segmentCount() const
+0x8FE11F10   ImageLoaderMachO::segName(unsigned int) const
+0x8FE11F3A   ImageLoaderMachO::segSize(unsigned int) const
+0x8FE11F64   ImageLoaderMachO::segFileSize(unsigned int) const
+0x8FE11F8E   ImageLoaderMachO::segHasTrailingZeroFill(unsigned int)
+0x8FE11FE4   ImageLoaderMachO::segFileOffset(unsigned int) const
+0x8FE1200E   ImageLoaderMachO::segReadable(unsigned int) const
+0x8FE1203C   ImageLoaderMachO::segWriteable(unsigned int) const
+0x8FE1206E   ImageLoaderMachO::segExecutable(unsigned int) const
+0x8FE120A0   ImageLoaderMachO::segUnaccessible(unsigned int) const
+0x8FE120D2   ImageLoaderMachO::segHasPreferredLoadAddress(unsigned int) const
+0x8FE12104   ImageLoaderMachO::segPreferredLoadAddress(unsigned int) const
+0x8FE1212E   ImageLoaderMachO::segActualLoadAddress(unsigned int) const
+0x8FE1215C   ImageLoaderMachO::segActualEndAddress(unsigned int) const
+0x8FE12196   ImageLoaderMachO::preFetchDATA(int, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE122EA   ImageLoaderMachO::segmentsMustSlideTogether() const
+0x8FE122F4   ImageLoaderMachO::segmentsCanSlide() const
+0x8FE12330   ImageLoaderMachO::isBundle() const
+0x8FE12346   ImageLoaderMachO::isDylib() const
+0x8FE1235C   ImageLoaderMachO::isExecutable() const
+0x8FE12372   ImageLoaderMachO::isPositionIndependentExecutable() const
+0x8FE12392   ImageLoaderMachO::forceFlat() const
+0x8FE123A4   ImageLoaderMachO::usesTwoLevelNameSpace() const
+0x8FE123B8   ImageLoaderMachO::isPrebindable() const
+0x8FE123CE   ImageLoaderMachO::hasCoalescedExports() const
+0x8FE123E4   ImageLoaderMachO::participatesInCoalescing() const
+0x8FE12412   ImageLoaderMachO::setSlide(long)
+0x8FE12420   ImageLoaderMachO::loadCodeSignature(linkedit_data_command const*, int, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE125C2   ImageLoaderMachO::getInstallPath() const
+0x8FE125DE   ImageLoaderMachO::registerInterposing()
+0x8FE1276A   ImageLoaderMachO::sdkVersion() const
+0x8FE1279E   ImageLoaderMachO::minOSVersion(mach_header const*)
+0x8FE127D0   ImageLoaderMachO::minOSVersion() const
+0x8FE12810   ImageLoaderMachO::getThreadPC() const
+0x8FE12898   ImageLoaderMachO::getMain() const
+0x8FE12926   ImageLoaderMachO::doGetDependentLibraries(ImageLoader::DependentLibraryInfo*)
+0x8FE12A14   ImageLoaderMachO::doGetLibraryInfo()
+0x8FE12A58   ImageLoaderMachO::getRPaths(ImageLoader::LinkContext const&, std::__1::vector<char const*, std::__1::allocator<char const*> >&) const
+0x8FE12F26   ImageLoaderMachO::getUUID(unsigned char*) const
+0x8FE12F86   ImageLoaderMachO::doRebase(ImageLoader::LinkContext const&)
+0x8FE130CE   ImageLoaderMachO::makeTextSegmentWritable(ImageLoader::LinkContext const&, bool)
+0x8FE13132   ImageLoaderMachO::segMakeWritable(unsigned int, ImageLoader::LinkContext const&)
+0x8FE1329C   ImageLoaderMachO::segProtect(unsigned int, ImageLoader::LinkContext const&)
+0x8FE13456   ImageLoaderMachO::findExportedSymbol(char const*, bool, ImageLoader const**) const
+0x8FE1353E   ImageLoaderMachO::getExportedSymbolAddress(ImageLoader::Symbol const*, ImageLoader::LinkContext const&, ImageLoader const*, bool) const
+0x8FE13592   ImageLoaderMachO::getSymbolAddress(ImageLoader::Symbol const*, ImageLoader const*, ImageLoader::LinkContext const&, bool) const
+0x8FE135E6   ImageLoaderMachO::getExportedSymbolInfo(ImageLoader::Symbol const*) const
+0x8FE1360A   ImageLoaderMachO::getExportedSymbolName(ImageLoader::Symbol const*) const
+0x8FE1361C   ImageLoaderMachO::getExportedSymbolCount() const
+0x8FE1362E   ImageLoaderMachO::getIndexedExportedSymbol(unsigned int) const
+0x8FE13640   ImageLoaderMachO::getImportedSymbolCount() const
+0x8FE13652   ImageLoaderMachO::getIndexedImportedSymbol(unsigned int) const
+0x8FE13664   ImageLoaderMachO::getImportedSymbolInfo(ImageLoader::Symbol const*) const
+0x8FE1366C   ImageLoaderMachO::getImportedSymbolName(ImageLoader::Symbol const*) const
+0x8FE1367E   ImageLoaderMachO::getSectionContent(char const*, char const*, void**, unsigned long*)
+0x8FE13722   ImageLoaderMachO::getUnwindInfo(dyld_unwind_sections*)
+0x8FE13794   ImageLoaderMachO::findSection(void const*, char const**, char const**, unsigned long*)
+0x8FE13834   ImageLoaderMachO::throwSymbolNotFound(ImageLoader::LinkContext const&, char const*, char const*, char const*, char const*)
+0x8FE13890   ImageLoaderMachO::machHeader() const
+0x8FE1389C   ImageLoaderMachO::getSlide() const
+0x8FE138A8   ImageLoaderMachO::getEnd() const
+0x8FE13928   ImageLoaderMachO::bindLocation(ImageLoader::LinkContext const&, unsigned long, unsigned long, ImageLoader const*, unsigned char, char const*, long, char const*)
+0x8FE13A66   ImageLoaderMachO::setupLazyPointerHandler(ImageLoader::LinkContext const&)
+0x8FE13C8A   ImageLoaderMachO::lookupProgramVars(ImageLoader::LinkContext const&) const
+0x8FE13DE4   ImageLoaderMachO::usablePrebinding(ImageLoader::LinkContext const&) const
+0x8FE13E8C   ImageLoaderMachO::doImageInit(ImageLoader::LinkContext const&)
+0x8FE13F90   ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&)
+0x8FE14102   ImageLoaderMachO::doGetDOFSections(ImageLoader::LinkContext const&, std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >&)
+0x8FE141D8   ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&)
+0x8FE14252   ImageLoaderMachO::needsInitialization()
+0x8FE1427E   ImageLoaderMachO::needsTermination()
+0x8FE14290   ImageLoaderMachO::doTermination(ImageLoader::LinkContext const&)
+0x8FE143A4   ImageLoaderMachO::printStatistics(unsigned int, ImageLoader::InitializerTimingList const&)
+0x8FE1442E   ImageLoaderMachO::assignSegmentAddresses(ImageLoader::LinkContext const&)
+0x8FE146C8   ImageLoaderMachO::reserveAnAddressRange(unsigned long, ImageLoader::LinkContext const&)
+0x8FE14782   ImageLoaderMachO::mapSegments(int, unsigned long long, unsigned long long, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE14AD0   ImageLoaderMachO::mapSegments(void const*, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE14C64   ImageLoaderMachO::~ImageLoaderMachO()
+0x8FE14C6E   ImageLoaderMachO::~ImageLoaderMachO()
+0x8FE14C9E   void std::__1::vector<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo> >::__push_back_slow_path<ImageLoader::DOFInfo const>(ImageLoader::DOFInfo const&)
+0x8FE14DCC   std::__1::__split_buffer<ImageLoader::DOFInfo, std::__1::allocator<ImageLoader::DOFInfo>&>::~__split_buffer()
+0x8FE14E10   _stub_binding_helper_i386_old
+0x8FE14E12   _stub_binding_helper
+0x8FE14E32   _misaligned_stack_error
+0x8FE14E4A   _stub_binding_helper_interface2
+0x8FE14E8B   _malloc
+0x8FE14F69   _free
+0x8FE14FB8   _calloc
+0x8FE15002   _realloc
+0x8FE15035   _vm_alloc
+0x8FE1509C   _xmmap
+0x8FE150C2   ImageLoaderMachOClassic::instantiateMainExecutable(macho_header const*, unsigned long, char const*, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE15290   ImageLoaderMachOClassic::instantiateStart(macho_header const*, char const*, unsigned int, unsigned int)
+0x8FE15360   ImageLoaderMachOClassic::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, unsigned int, unsigned int, linkedit_data_command const*, ImageLoader::LinkContext const&)
+0x8FE15590   ImageLoaderMachOClassic::mapSegmentsClassic(int, unsigned long long, unsigned long long, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE15616   ImageLoaderMachOClassic::instantiateFromCache(macho_header const*, char const*, long, stat const&, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE15770   ImageLoaderMachOClassic::instantiateFromMemory(char const*, macho_header const*, unsigned long long, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE1585E   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x8FE158A4   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x8FE158AE   ImageLoaderMachOClassic::~ImageLoaderMachOClassic()
+0x8FE158DE   ImageLoaderMachOClassic::segmentCommandOffsets() const
+0x8FE158EA   ImageLoaderMachOClassic::libImage(unsigned int) const
+0x8FE15904   ImageLoaderMachOClassic::libReExported(unsigned int) const
+0x8FE1591E   ImageLoaderMachOClassic::libIsUpward(unsigned int) const
+0x8FE1593C   ImageLoaderMachOClassic::setLibImage(unsigned int, ImageLoader*, bool, bool)
+0x8FE1596A   ImageLoaderMachOClassic::setSymbolTableInfo(macho_nlist const*, char const*, dysymtab_command const*)
+0x8FE15986   ImageLoaderMachOClassic::prefetchLINKEDIT(ImageLoader::LinkContext const&)
+0x8FE15A70   ImageLoaderMachOClassic::getExtraZeroFillEntriesCount()
+0x8FE15AB0   ImageLoaderMachOClassic::initMappingTable(unsigned long long, shared_file_mapping_np*)
+0x8FE15C88   ImageLoaderMachOClassic::mapSplitSegDylibOutsideSharedRegion(int, unsigned long long, unsigned long long, unsigned long long, ImageLoader::LinkContext const&)
+0x8FE160D6   ImageLoaderMachOClassic::isSubframeworkOf(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x8FE1624E   ImageLoaderMachOClassic::hasSubLibrary(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x8FE16548   ImageLoaderMachOClassic::getFirstWritableSegmentAddress()
+0x8FE165C4   ImageLoaderMachOClassic::getRelocBase()
+0x8FE165F8   ImageLoaderMachOClassic::resetPreboundLazyPointers(ImageLoader::LinkContext const&)
+0x8FE16652   ImageLoaderMachOClassic::rebase(ImageLoader::LinkContext const&)
+0x8FE169CC   ImageLoaderMachOClassic::binarySearchWithToc(char const*, char const*, macho_nlist const*, dylib_table_of_contents const*, unsigned int, unsigned int) const
+0x8FE16A5A   ImageLoaderMachOClassic::binarySearch(char const*, char const*, macho_nlist const*, unsigned int) const
+0x8FE16AC2   ImageLoaderMachOClassic::findExportedSymbol(char const*, ImageLoader const**) const
+0x8FE16B48   ImageLoaderMachOClassic::containsSymbol(void const*) const
+0x8FE16B66   ImageLoaderMachOClassic::exportedSymbolAddress(ImageLoader::LinkContext const&, ImageLoader::Symbol const*, ImageLoader const*, bool) const
+0x8FE16B78   ImageLoaderMachOClassic::exportedSymbolIsWeakDefintion(ImageLoader::Symbol const*) const
+0x8FE16B8A   ImageLoaderMachOClassic::exportedSymbolName(ImageLoader::Symbol const*) const
+0x8FE16B9A   ImageLoaderMachOClassic::exportedSymbolCount() const
+0x8FE16BA8   ImageLoaderMachOClassic::exportedSymbolIndexed(unsigned int) const
+0x8FE16BC8   ImageLoaderMachOClassic::importedSymbolCount() const
+0x8FE16BD6   ImageLoaderMachOClassic::importedSymbolIndexed(unsigned int) const
+0x8FE16BF6   ImageLoaderMachOClassic::importedSymbolName(ImageLoader::Symbol const*) const
+0x8FE16C06   ImageLoaderMachOClassic::resolveUndefined(ImageLoader::LinkContext const&, macho_nlist const*, bool, bool, ImageLoader const**)
+0x8FE16FCE   ImageLoaderMachOClassic::isAddrInSection(unsigned long, unsigned char)
+0x8FE17034   ImageLoaderMachOClassic::doBindExternalRelocations(ImageLoader::LinkContext const&)
+0x8FE17382   ImageLoaderMachOClassic::bindIndirectSymbol(unsigned long*, macho_section const*, char const*, unsigned long, ImageLoader const*, ImageLoader::LinkContext const&)
+0x8FE17524   ImageLoaderMachOClassic::doBindFastLazySymbol(unsigned int, ImageLoader::LinkContext const&, void (*)(), void (*)())
+0x8FE17560   ImageLoaderMachOClassic::doBindLazySymbol(unsigned long*, ImageLoader::LinkContext const&)
+0x8FE1772E   ImageLoaderMachOClassic::initializeCoalIterator(ImageLoader::CoalIterator&, unsigned int)
+0x8FE17780   ImageLoaderMachOClassic::incrementCoalIterator(ImageLoader::CoalIterator&)
+0x8FE17810   ImageLoaderMachOClassic::getAddressCoalIterator(ImageLoader::CoalIterator&, ImageLoader::LinkContext const&)
+0x8FE1784A   ImageLoaderMachOClassic::updateUsesCoalIterator(ImageLoader::CoalIterator&, unsigned long, ImageLoader*, ImageLoader::LinkContext const&)
+0x8FE17BAA   ImageLoaderMachOClassic::bindIndirectSymbolPointers(ImageLoader::LinkContext const&, bool, bool)
+0x8FE17E7A   ImageLoaderMachOClassic::initializeLazyStubs(ImageLoader::LinkContext const&)
+0x8FE18084   ImageLoaderMachOClassic::doBind(ImageLoader::LinkContext const&, bool)
+0x8FE18162   ImageLoaderMachOClassic::doBindJustLazies(ImageLoader::LinkContext const&)
+0x8FE18190   ImageLoaderMachOClassic::doInterpose(ImageLoader::LinkContext const&)
+0x8FE1839E   ImageLoaderMachOClassic::dynamicInterpose(ImageLoader::LinkContext const&)
+0x8FE185F4   ImageLoaderMachOClassic::findClosestSymbol(void const*, void const**) const
+0x8FE186DA   ImageLoaderMachOClassic::setDyldInfo(dyld_info_command const*)
+0x8FE186E0   ImageLoaderMachOCompressed::instantiateMainExecutable(macho_header const*, unsigned long, char const*, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE18900   ImageLoaderMachOCompressed::instantiateFromFile(char const*, int, unsigned char const*, unsigned long long, unsigned long long, stat const&, unsigned int, unsigned int, linkedit_data_command const*, ImageLoader::LinkContext const&)
+0x8FE18C50   ImageLoaderMachOCompressed::instantiateFromCache(macho_header const*, char const*, long, stat const&, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE18E50   ImageLoaderMachOCompressed::instantiateFromMemory(char const*, macho_header const*, unsigned long long, unsigned int, unsigned int, ImageLoader::LinkContext const&)
+0x8FE18FD0   ImageLoaderMachOCompressed::~ImageLoaderMachOCompressed()
+0x8FE19020   ImageLoaderMachOCompressed::~ImageLoaderMachOCompressed()
+0x8FE19080   ImageLoaderMachOCompressed::segmentCommandOffsets() const
+0x8FE19090   ImageLoaderMachOCompressed::libImage(unsigned int) const
+0x8FE190B0   ImageLoaderMachOCompressed::libReExported(unsigned int) const
+0x8FE190D0   ImageLoaderMachOCompressed::libIsUpward(unsigned int) const
+0x8FE190F0   ImageLoaderMachOCompressed::setLibImage(unsigned int, ImageLoader*, bool, bool)
+0x8FE19120   ImageLoaderMachOCompressed::markLINKEDIT(ImageLoader::LinkContext const&, int)
+0x8FE19210   ImageLoaderMachOCompressed::rebase(ImageLoader::LinkContext const&)
+0x8FE19CB0   ImageLoaderMachOCompressed::trieWalk(unsigned char const*, unsigned char const*, char const*)
+0x8FE19E60   ImageLoaderMachOCompressed::findExportedSymbol(char const*, ImageLoader const**) const
+0x8FE1A020   ImageLoaderMachOCompressed::containsSymbol(void const*) const
+0x8FE1A050   ImageLoaderMachOCompressed::exportedSymbolAddress(ImageLoader::LinkContext const&, ImageLoader::Symbol const*, ImageLoader const*, bool) const
+0x8FE1A3E0   ImageLoaderMachOCompressed::exportedSymbolIsWeakDefintion(ImageLoader::Symbol const*) const
+0x8FE1A4D0   ImageLoaderMachOCompressed::exportedSymbolName(ImageLoader::Symbol const*) const
+0x8FE1A510   ImageLoaderMachOCompressed::exportedSymbolCount() const
+0x8FE1A550   ImageLoaderMachOCompressed::exportedSymbolIndexed(unsigned int) const
+0x8FE1A590   ImageLoaderMachOCompressed::importedSymbolCount() const
+0x8FE1A5D0   ImageLoaderMachOCompressed::importedSymbolIndexed(unsigned int) const
+0x8FE1A610   ImageLoaderMachOCompressed::importedSymbolName(ImageLoader::Symbol const*) const
+0x8FE1A650   ImageLoaderMachOCompressed::resolveFlat(ImageLoader::LinkContext const&, char const*, bool, bool, ImageLoader const**)
+0x8FE1A760   ImageLoaderMachOCompressed::resolveTwolevel(ImageLoader::LinkContext const&, ImageLoader const*, bool, char const*, bool, ImageLoader const**)
+0x8FE1A920   ImageLoaderMachOCompressed::resolve(ImageLoader::LinkContext const&, char const*, unsigned char, long, ImageLoader const**, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x8FE1AAF0   ImageLoaderMachOCompressed::bindAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x8FE1AB80   ImageLoaderMachOCompressed::doBind(ImageLoader::LinkContext const&, bool)
+0x8FE1AC90   ImageLoaderMachOCompressed::eachBind(ImageLoader::LinkContext const&, unsigned long (ImageLoaderMachOCompressed::*)(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool))
+0x8FE1B820   ImageLoaderMachOCompressed::doBindJustLazies(ImageLoader::LinkContext const&)
+0x8FE1B860   ImageLoaderMachOCompressed::eachLazyBind(ImageLoader::LinkContext const&, unsigned long (ImageLoaderMachOCompressed::*)(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool))
+0x8FE1BE60   ImageLoaderMachOCompressed::doBindLazySymbol(unsigned long*, ImageLoader::LinkContext const&)
+0x8FE1C0C0   ImageLoaderMachOCompressed::doBindFastLazySymbol(unsigned int, ImageLoader::LinkContext const&, void (*)(), void (*)())
+0x8FE1C490   ImageLoaderMachOCompressed::initializeCoalIterator(ImageLoader::CoalIterator&, unsigned int)
+0x8FE1C4F0   ImageLoaderMachOCompressed::incrementCoalIterator(ImageLoader::CoalIterator&)
+0x8FE1C9B0   ImageLoaderMachOCompressed::getAddressCoalIterator(ImageLoader::CoalIterator&, ImageLoader::LinkContext const&)
+0x8FE1CA20   ImageLoaderMachOCompressed::updateUsesCoalIterator(ImageLoader::CoalIterator&, unsigned long, ImageLoader*, ImageLoader::LinkContext const&)
+0x8FE1CFF0   ImageLoaderMachOCompressed::interposeAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x8FE1D040   ImageLoaderMachOCompressed::doInterpose(ImageLoader::LinkContext const&)
+0x8FE1D0E0   ImageLoaderMachOCompressed::dynamicInterposeAt(ImageLoader::LinkContext const&, unsigned long, unsigned char, char const*, unsigned char, long, long, char const*, ImageLoaderMachOCompressed::LastLookup*, bool)
+0x8FE1D190   ImageLoaderMachOCompressed::dynamicInterpose(ImageLoader::LinkContext const&)
+0x8FE1D220   ImageLoaderMachOCompressed::findClosestSymbol(void const*, void const**) const
+0x8FE1D390   ImageLoaderMachOCompressed::resetPreboundLazyPointers(ImageLoader::LinkContext const&)
+0x8FE1D3A0   ImageLoaderMachO::inSharedCache() const
+0x8FE1D3C0   ImageLoaderMachOCompressed::isSubframeworkOf(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x8FE1D3D0   ImageLoaderMachOCompressed::hasSubLibrary(ImageLoader::LinkContext const&, ImageLoader const*) const
+0x8FE1D3E0   ImageLoaderMachOCompressed::setDyldInfo(dyld_info_command const*)
+0x8FE1D3F0   ImageLoaderMachOCompressed::setSymbolTableInfo(macho_nlist const*, char const*, dysymtab_command const*)
+0x8FE1D3F6   CSCppTimeoutLock::CSCppTimeoutLock(unsigned int*, unsigned int)
+0x8FE1D4B8   CSCppTimeoutLock::CSCppTimeoutLock(unsigned int*, unsigned int)
+0x8FE1D4C2   CSCppTimeoutLock::~CSCppTimeoutLock()
+0x8FE1D4EC   CSCppTimeoutLock::~CSCppTimeoutLock()
+0x8FE1D4F6   CSCppDyldSharedMemoryPage::send_notice(unsigned int, unsigned int&, unsigned int&)
+0x8FE1DB31   _unw_init_local
+0x8FE1DBDC   _unw_get_reg
+0x8FE1DC1F   _unw_set_reg
+0x8FE1DCEE   _unw_step
+0x8FE1DCFC   _unw_get_proc_info
+0x8FE1DD2B   _unw_resume
+0x8FE1DD48   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::validReg(int)
+0x8FE1DD5C   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getReg(int)
+0x8FE1DE08   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::setReg(int, unsigned long long)
+0x8FE1DEB4   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::validFloatReg(int)
+0x8FE1DEBC   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getFloatReg(int)
+0x8FE1DEDA   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::setFloatReg(int, double)
+0x8FE1DF00   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::step()
+0x8FE1DF6C   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getInfo(unw_proc_info_t*)
+0x8FE1DF86   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::jumpto()
+0x8FE1DFA0   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::isSignalFrame()
+0x8FE1DFB0   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getFunctionName(char*, unsigned long, unsigned long long*)
+0x8FE1E01C   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::setInfoBasedOnIPRegister(bool)
+0x8FE1E0AC   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getRegisterName(int)
+0x8FE1E0D2   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::~UnwindCursor()
+0x8FE1E0D8   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::~UnwindCursor()
+0x8FE1E0DE   libunwind::UnwindCursor<libunwind::LocalAddressSpace, libunwind::Registers_x86>::getInfoFromCompactEncodingSection(unsigned int, libunwind::UnwindInfoSections const&)
+0x8FE1E41E   libunwind::CompactUnwinder_x86<libunwind::LocalAddressSpace>::stepWithCompactEncoding(unsigned int, unsigned int, libunwind::LocalAddressSpace&, libunwind::Registers_x86&)
+0x8FE1E4DC   libunwind::CompactUnwinder_x86<libunwind::LocalAddressSpace>::stepWithCompactEncodingEBPFrame(unsigned int, unsigned int, libunwind::LocalAddressSpace&, libunwind::Registers_x86&)
+0x8FE1E5B4   libunwind::CompactUnwinder_x86<libunwind::LocalAddressSpace>::stepWithCompactEncodingFrameless(unsigned int, unsigned int, libunwind::LocalAddressSpace&, libunwind::Registers_x86&, bool)
+0x8FE1E8B4   libunwind::Registers_x86::setFloatRegister(int, double)
+0x8FE1E8EA   libunwind::Registers_x86::getFloatRegister(int) const
+0x8FE1E920   __Unwind_RaiseException
+0x8FE1EA1A   _unwind_phase2
+0x8FE1EB8A   __Unwind_Resume
+0x8FE1EC03   _unwind_phase2_forced
+0x8FE1ED2D   __Unwind_GetLanguageSpecificData
+0x8FE1ED55   __Unwind_SetGR
+0x8FE1ED81   __Unwind_GetIP
+0x8FE1EDA9   __Unwind_SetIP
+0x8FE1EDD6   __Unwind_GetRegionStart
+0x8FE1EDFE   __Unwind_DeleteException
+0x8FE1EE20   libunwind::Registers_x86::jumpto()
+0x8FE1EE4E   _unw_getcontext
+0x8FE1EE7E   ___cxa_allocate_exception
+0x8FE1EEBE   __cxxabiv1::do_malloc(unsigned long)
+0x8FE1EFB2   ___cxa_free_exception
+0x8FE1EFD0   __cxxabiv1::do_free(void*)
+0x8FE1F0D2   ___cxa_throw
+0x8FE1F14C   __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+0x8FE1F177   ___cxa_begin_catch
+0x8FE1F1E9   ___cxa_end_catch
+0x8FE1F276   ___cxa_decrement_exception_refcount
+0x8FE1F2B5   ___cxa_rethrow
+0x8FE1F322   __cxxabiv1::(anonymous namespace)::mutexor::~mutexor()
+0x8FE1F340   std::get_unexpected()
+0x8FE1F357   std::__unexpected(void (*)())
+0x8FE1F373   std::unexpected()
+0x8FE1F393   std::get_terminate()
+0x8FE1F3AA   std::__terminate(void (*)())
+0x8FE1F400   std::terminate()
+0x8FE1F467   std::get_new_handler()
+0x8FE1F47C   std::bad_alloc::~bad_alloc()
+0x8FE1F486   std::bad_alloc::~bad_alloc()
+0x8FE1F4A0   std::bad_alloc::what() const
+0x8FE1F4C0   operator new(unsigned long)
+0x8FE1F536   operator new[](unsigned long)
+0x8FE1F542   operator delete(void*)
+0x8FE1F55D   operator delete[](void*)
+0x8FE1F568   ___gxx_personality_v0
+0x8FE1F6C0   __cxxabiv1::scan_eh_tab(__cxxabiv1::(anonymous namespace)::scan_results&, _Unwind_Action, bool, _Unwind_Exception*, _Unwind_Context*)
+0x8FE1FB4C   __cxxabiv1::call_terminate(bool, _Unwind_Exception*)
+0x8FE1FB74   __cxxabiv1::set_registers(_Unwind_Exception*, _Unwind_Context*, __cxxabiv1::(anonymous namespace)::scan_results const&)
+0x8FE1FBC1   ___cxa_call_unexpected
+0x8FE1FE31   __cxxabiv1::readEncodedPointer(unsigned char const**, unsigned char)
+0x8FE1FF28   __cxxabiv1::exception_spec_can_catch(long long, unsigned char const*, unsigned char, __cxxabiv1::__shim_type_info const*, void*, _Unwind_Exception*)
+0x8FE1FFCF   __cxxabiv1::get_shim_type_info(unsigned long long, unsigned char const*, unsigned char, bool, _Unwind_Exception*)
+0x8FE20074   __cxxabiv1::readSLEB128(unsigned char const**)
+0x8FE200B3   ___cxa_pure_virtual
+0x8FE200CE   std::exception::~exception()
+0x8FE200D4   std::bad_exception::~bad_exception()
+0x8FE200DA   std::bad_exception::~bad_exception()
+0x8FE200E4   std::bad_exception::what() const
+0x8FE200F6   __cxxabiv1::__shim_type_info::noop1() const
+0x8FE200FC   __cxxabiv1::__shim_type_info::noop2() const
+0x8FE20102   __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
+0x8FE2010C   __cxxabiv1::__fundamental_type_info::~__fundamental_type_info()
+0x8FE20126   __cxxabiv1::__class_type_info::~__class_type_info()
+0x8FE20130   __cxxabiv1::__class_type_info::~__class_type_info()
+0x8FE2014A   __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+0x8FE20154   __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+0x8FE2016E   __cxxabiv1::__pointer_type_info::~__pointer_type_info()
+0x8FE20178   __cxxabiv1::__pointer_type_info::~__pointer_type_info()
+0x8FE20192   __cxxabiv1::__fundamental_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x8FE201A4   __cxxabiv1::__class_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x8FE20258   __cxxabiv1::__class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const
+0x8FE202A4   __cxxabiv1::__si_class_type_info::has_unambiguous_public_base(__cxxabiv1::__dynamic_cast_info*, void*, int) const
+0x8FE20310   __cxxabiv1::__pointer_type_info::can_catch(__cxxabiv1::__shim_type_info const*, void*&) const
+0x8FE20464   __cxxabiv1::__class_type_info::process_static_type_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int) const
+0x8FE204CA   __cxxabiv1::__si_class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const
+0x8FE205BA   __cxxabiv1::__class_type_info::search_below_dst(__cxxabiv1::__dynamic_cast_info*, void const*, int, bool) const
+0x8FE2061E   __cxxabiv1::__si_class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const
+0x8FE20688   __cxxabiv1::__class_type_info::search_above_dst(__cxxabiv1::__dynamic_cast_info*, void const*, void const*, int, bool) const
+0x8FE206BE   std::type_info::~type_info()
+0x8FE206D0   _strcpy
+0x8FE20790   _strlen
+0x8FE207E0   _strncpy
+0x8FE208C8   _arc4_stir
+0x8FE209CC   _arc4random
+0x8FE20B7D   _arc4_fetch
+0x8FE20C05   _closedir$UNIX2003
+0x8FE20C66   _bcopy
+0x8FE20C8A   ___private_getcwd
+0x8FE21207   ___getcwd
+0x8FE213D7   _getcwd
+0x8FE213FC   _getpagesize
+0x8FE21485   _opendir$INODE64$UNIX2003
+0x8FE214A3   ___opendir2$INODE64$UNIX2003
+0x8FE214DB   ___opendir_common
+0x8FE21983   _opendir_compar
+0x8FE219AA   __readdir_unlocked$INODE64
+0x8FE21A88   _readdir$INODE64
+0x8FE21AC1   _readdir_r$INODE64
+0x8FE21B60   _sysctl
+0x8FE21D60   _sysctlbyname
+0x8FE21E5A   _telldir$INODE64$UNIX2003
+0x8FE21F10   __reclaim_telldir
+0x8FE21F44   _usleep$UNIX2003
+0x8FE21F85   _nanosleep$UNIX2003
+0x8FE2213E   _heapsort
+0x8FE22387   _mergesort
+0x8FE22B96   _insertionsort
+0x8FE22C01   _qsort
+0x8FE22C3C   __qsort
+0x8FE2334C   _reallocf
+0x8FE23387   _realpath$DARWIN_EXTSN
+0x8FE23B6F   _strdup
+0x8FE23BB0   _strnlen
+0x8FE23BCC   _strrchr
+0x8FE23BE9   _strstr
+0x8FE23C48   _gettimeofday
+0x8FE23D01   _strlcpy
+0x8FE23D61   _strcat
+0x8FE23D9F   _strlcat
+0x8FE23E1C   _dirfd
+0x8FE23E50   ___divdi3
+0x8FE23F50   ___udivdi3
+0x8FE23FF0   ___umoddi3
+0x8FE240A3   __simple_getenv
+0x8FE24134   __simple_vdprintf
+0x8FE24187   __flush_reset
+0x8FE241A1   ___simple_bprintf
+0x8FE248D0   __flush
+0x8FE2491F   __simple_dprintf
+0x8FE24975   __simple_salloc
+0x8FE249E0   __enlarge
+0x8FE24AF9   __simple_vsprintf
+0x8FE24B20   __simple_sprintf
+0x8FE24B49   __simple_string
+0x8FE24B5C   __simple_sfree
+0x8FE24BCB   _dec
+0x8FE24E75   _hex
+0x8FE2513F   _udec
+0x8FE252DF   _ydec
+0x8FE25510   _preempt
+0x8FE25520   _backoff
+0x8FE25540   _OSAtomicAnd32Barrier$VARIANT$up
+0x8FE25554   _OSAtomicAnd32$VARIANT$mp
+0x8FE2556C   _OSAtomicOr32Barrier$VARIANT$up
+0x8FE25580   _OSAtomicOr32$VARIANT$mp
+0x8FE25598   _OSAtomicXor32Barrier$VARIANT$up
+0x8FE255AC   _OSAtomicXor32$VARIANT$mp
+0x8FE255C4   _OSAtomicAnd32OrigBarrier$VARIANT$up
+0x8FE255D8   _OSAtomicAnd32Orig$VARIANT$mp
+0x8FE255EC   _OSAtomicOr32OrigBarrier$VARIANT$up
+0x8FE25600   _OSAtomicOr32OrigBarrier
+0x8FE25614   _OSAtomicXor32OrigBarrier$VARIANT$up
+0x8FE25628   _OSAtomicXor32Orig$VARIANT$mp
+0x8FE2563C   _OSAtomicCompareAndSwap32Barrier$VARIANT$up
+0x8FE25654   _OSAtomicCompareAndSwap32Barrier
+0x8FE2566C   _OSAtomicCompareAndSwap64Barrier$VARIANT$up
+0x8FE25690   _OSAtomicCompareAndSwap64$VARIANT$mp
+0x8FE256B4   _OSAtomicAdd32Barrier$VARIANT$up
+0x8FE256C4   _OSAtomicAdd32$VARIANT$mp
+0x8FE256D8   _OSAtomicIncrement32Barrier$VARIANT$up
+0x8FE256E8   _OSAtomicIncrement32$VARIANT$mp
+0x8FE256F8   _OSAtomicDecrement32Barrier$VARIANT$up
+0x8FE25708   _OSAtomicDecrement32Barrier
+0x8FE25718   _OSAtomicAdd64Barrier$VARIANT$up
+0x8FE2573C   _OSAtomicAdd64$VARIANT$mp
+0x8FE25760   _OSAtomicIncrement64Barrier$VARIANT$up
+0x8FE25784   _OSAtomicIncrement64Barrier
+0x8FE257A8   _OSAtomicDecrement64Barrier$VARIANT$up
+0x8FE257D0   _OSAtomicDecrement64$VARIANT$mp
+0x8FE257F8   _OSAtomicTestAndSetBarrier$VARIANT$up
+0x8FE25824   _OSAtomicTestAndSet$VARIANT$mp
+0x8FE25854   _OSAtomicTestAndClearBarrier$VARIANT$up
+0x8FE25880   _OSAtomicTestAndClear$VARIANT$mp
+0x8FE258B0   _OSMemoryBarrier$VARIANT$all
+0x8FE258C0   _OSMemoryBarrier$VARIANT$sse2
+0x8FE258C4   _OSAtomicEnqueue$VARIANT$up
+0x8FE258E8   _OSAtomicEnqueue$VARIANT$mp
+0x8FE2590C   _OSAtomicDequeue$VARIANT$up
+0x8FE25930   _OSAtomicDequeue$VARIANT$mp
+0x8FE25954   _OSAtomicFifoEnqueue
+0x8FE25988   _OSAtomicFifoDequeue
+0x8FE259BA   __OSSpinLockLockSlow
+0x8FE25A2C   __os_lock_corruption_abort
+0x8FE25A2E   __spin_lock
+0x8FE25A47   __spin_lock_try
+0x8FE25A5F   __spin_unlock
+0x8FE25A68   __os_semaphore_create
+0x8FE25AD2   __os_semaphore_dispose
+0x8FE25B00   _bcmp
+0x8FE25BC4   __platform_memset
+0x8FE25C5C   _memset_pattern16
+0x8FE25C70   _memset_pattern8
+0x8FE25C88   _memset_pattern4
+0x8FE25D20   _strchr
+0x8FE25DA0   _strcmp
+0x8FE25E40   _strncmp
+0x8FE25F40   _memchr
+0x8FE26000   __platform_memset_pattern
+0x8FE26100   __platform_bzero$VARIANT$scalar
+0x8FE26134   _ffsl
+0x8FE26144   _flsl
+0x8FE26153   _memcpy
+0x8FE2619E   _pthread_exit
+0x8FE261E9   __pthread_exit
+0x8FE2649E   __pthread_set_self
+0x8FE2651C   __pthread_testcancel
+0x8FE2655F   __pthread_exit_if_canceled
+0x8FE265B0   __pthread_introspection_hook_callout_thread_destroy
+0x8FE265F8   __pthread_introspection_hook_callout_thread_terminate
+0x8FE26679   _pthread_testcancel$UNIX2003
+0x8FE266B4   __plockstat_never_fired
+0x8FE266B5   __pthread_mutex_init
+0x8FE267E3   ___mtx_droplock
+0x8FE26A2A   ___mtx_markprepost
+0x8FE26AEE   _pthread_mutex_lock
+0x8FE26B03   __pthread_mutex_lock
+0x8FE26DED   _pthread_mutex_unlock
+0x8FE26F2B   __pthread_mutex_check_init
+0x8FE26F9E   _pthread_mutex_destroy
+0x8FE27024   ___pthread_abort
+0x8FE27069   ___pthread_abort_reason
+0x8FE270BB   __pthread_tsd_cleanup
+0x8FE270BC   _bzero
+0x8FE270C4   ___pthread_set_self
+0x8FE270D5   _clock_get_time
+0x8FE271BD   __kernelrpc_mach_port_allocate
+0x8FE272BE   __kernelrpc_mach_port_deallocate
+0x8FE273A2   __kernelrpc_mach_port_mod_refs
+0x8FE27496   __kernelrpc_mach_vm_allocate
+0x8FE275B4   __kernelrpc_mach_vm_deallocate
+0x8FE276A6   __kernelrpc_mach_vm_protect
+0x8FE277A4   _semaphore_create
+0x8FE278CA   _semaphore_destroy
+0x8FE279A1   _vm_copy
+0x8FE27A95   _mach_init
+0x8FE27ABE   _mach_init_doit
+0x8FE27B4B   _mach_absolute_time
+0x8FE27BA8   _mach_msg
+0x8FE27CDC   __kernelrpc_mach_vm_allocate_trap
+0x8FE27CE8   __kernelrpc_mach_vm_deallocate_trap
+0x8FE27CF4   __kernelrpc_mach_vm_protect_trap
+0x8FE27D00   __kernelrpc_mach_vm_map_trap
+0x8FE27D0C   __kernelrpc_mach_port_allocate_trap
+0x8FE27D18   __kernelrpc_mach_port_destroy_trap
+0x8FE27D24   __kernelrpc_mach_port_deallocate_trap
+0x8FE27D30   __kernelrpc_mach_port_mod_refs_trap
+0x8FE27D3C   __kernelrpc_mach_port_move_member_trap
+0x8FE27D48   __kernelrpc_mach_port_insert_right_trap
+0x8FE27D54   __kernelrpc_mach_port_insert_member_trap
+0x8FE27D60   __kernelrpc_mach_port_extract_member_trap
+0x8FE27D6C   __kernelrpc_mach_port_construct_trap
+0x8FE27D78   __kernelrpc_mach_port_destruct_trap
+0x8FE27D84   _mach_reply_port
+0x8FE27D90   _thread_self_trap
+0x8FE27D9C   _task_self_trap
+0x8FE27DA8   _host_self_trap
+0x8FE27DB4   _mach_msg_trap
+0x8FE27DC0   _mach_msg_overwrite_trap
+0x8FE27DCC   _semaphore_signal_trap
+0x8FE27DD8   _semaphore_signal_all_trap
+0x8FE27DE4   _semaphore_signal_thread_trap
+0x8FE27DF0   _semaphore_wait_trap
+0x8FE27DFC   _semaphore_wait_signal_trap
+0x8FE27E08   _semaphore_timedwait_trap
+0x8FE27E14   _semaphore_timedwait_signal_trap
+0x8FE27E20   __kernelrpc_mach_port_guard_trap
+0x8FE27E2C   __kernelrpc_mach_port_unguard_trap
+0x8FE27E38   _task_name_for_pid
+0x8FE27E44   _task_for_pid
+0x8FE27E50   _pid_for_task
+0x8FE27E5C   _macx_swapon
+0x8FE27E68   _macx_swapoff
+0x8FE27E74   _macx_triggers
+0x8FE27E80   _macx_backing_store_suspend
+0x8FE27E8C   _macx_backing_store_recovery
+0x8FE27E98   _swtch_pri
+0x8FE27EA4   _swtch
+0x8FE27EB0   _syscall_thread_switch
+0x8FE27EBC   _clock_sleep_trap
+0x8FE27EC8   _mach_timebase_info
+0x8FE27ED4   _mach_wait_until
+0x8FE27EE0   _mk_timer_create
+0x8FE27EEC   _mk_timer_destroy
+0x8FE27EF8   _mk_timer_arm
+0x8FE27F04   _mk_timer_cancel
+0x8FE27F10   ___commpage_gettimeofday
+0x8FE27F67   _mig_get_reply_port
+0x8FE27F87   _mig_dealloc_reply_port
+0x8FE27FFE   _mig_put_reply_port
+0x8FE27FFF   _thread_switch
+0x8FE28004   _mach_thread_self
+0x8FE28009   ___error
+0x8FE28020   _cerror_nocancel
+0x8FE28048   _cerror
+0x8FE28070   _kill$UNIX2003
+0x8FE28095   _mmap$UNIX2003
+0x8FE2815E   _unlink
+0x8FE28181   ___inc_remove_counter
+0x8FE281B5   _mach_port_allocate
+0x8FE281E6   _mach_port_deallocate
+0x8FE28210   _mach_port_mod_refs
+0x8FE2824B   _mach_vm_allocate
+0x8FE282FA   _mach_vm_deallocate
+0x8FE2839F   _mach_vm_protect
+0x8FE283F5   _vm_allocate
+0x8FE2843E   _vm_deallocate
+0x8FE28472   _vm_protect
+0x8FE284B8   _munmap$UNIX2003
+0x8FE28524   ___bsdthread_create
+0x8FE28540   ___bsdthread_ctl
+0x8FE2855C   ___bsdthread_register
+0x8FE28578   ___bsdthread_terminate
+0x8FE28594   _connect$UNIX2003
+0x8FE285B0   ___disable_threadsignal
+0x8FE285CC   __exit
+0x8FE285E8   _fcntl$UNIX2003
+0x8FE28604   _getattrlist$UNIX2003
+0x8FE28620   ___getdirentries64
+0x8FE2863C   _getpid
+0x8FE28680   ___gettimeofday
+0x8FE286A4   _ioctl
+0x8FE286C0   ___kill
+0x8FE286DC   _lseek
+0x8FE286F4   _mmap
+0x8FE28710   ___munmap
+0x8FE2872C   _open$UNIX2003
+0x8FE28748   ___posix_spawn
+0x8FE28764   ___proc_info
+0x8FE28780   ___process_policy
+0x8FE2879C   ___psynch_cvbroad
+0x8FE287B8   ___psynch_cvclrprepost
+0x8FE287D4   ___psynch_cvsignal
+0x8FE287F0   ___psynch_cvwait
+0x8FE2880C   ___psynch_mutexdrop
+0x8FE28828   ___psynch_mutexwait
+0x8FE28844   ___pthread_canceled
+0x8FE28860   ___pthread_kill
+0x8FE2887C   ___pthread_markcancel
+0x8FE28898   ___pthread_sigmask
+0x8FE288B4   ___semwait_signal
+0x8FE288D0   ___semwait_signal_nocancel
+0x8FE288EC   _sendto$UNIX2003
+0x8FE28908   ___sigwait
+0x8FE28924   _syscall
+0x8FE28940   ___sysctl
+0x8FE2895C   ___sysctlbyname
+0x8FE28978   ___thread_selfid
+0x8FE28990   ___unlink
+0x8FE289AC   ___workq_kernreturn
+0x8FE289C8   ___workq_open
+0x8FE289E4   _close$UNIX2003
+0x8FE28A00   _csops
+0x8FE28A1C   _fstat64
+0x8FE28A38   _fstatfs64
+0x8FE28A54   _issetugid
+0x8FE28A70   _lstat64
+0x8FE28A8C   _posix_madvise
+0x8FE28AA8   _pread$UNIX2003
+0x8FE28AC4   _proc_rlimit_control
+0x8FE28AE0   _read$UNIX2003
+0x8FE28AFC   _readlink
+0x8FE28B18   _socket
+0x8FE28B34   _stat64
+0x8FE28B50   _statfs64
+0x8FE28B6C   _write$UNIX2003
+0x8FE28B88   tramp_cerror
+0x8FE28BAA   tramp_cerror_nocancel
+0x8FE28BCC   __sysenter_trap
+0x8FE28BD4   _i386_get_ldt
+0x8FE28BE0   _i386_set_ldt
+attributes     dependent dylibs
+no Designated Requirements info
+offset      length  data-kind
